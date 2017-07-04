@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.5.0)
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - Kingfisher (3.10.2)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
+  - RxSwift (3.5.0)
+  - SKPhotoBrowser (4.0.1)
+  - SwiftPullToRefresh (1.1.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5.0)
+  - Charts (~> 3.0.2)
+  - Kingfisher (~> 3.10.2)
+  - RealmSwift (~> 2.8.3)
+  - RxSwift (~> 3.5.0)
+  - SKPhotoBrowser (~> 4.0.1)
+  - SwiftPullToRefresh (~> 1.1.0)
+  - SwiftyJSON (~> 3.1.4)
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  SKPhotoBrowser: 3a7c6fc02aa1620ab17253a47a49fafda46536e8
+  SwiftPullToRefresh: 11ffa1b9d886b2902bed64b05bd50e1e0f1201f1
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 523924e610bb3d437a56d0ddf036f4d60a8d428f
+
+COCOAPODS: 1.2.0

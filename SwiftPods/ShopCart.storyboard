@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sYG-4z-kw0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="aEl-md-Fyc">
+            <objects>
+                <navigationController id="sYG-4z-kw0" customClass="ZJNavigationController" customModule="SwiftPods" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4nY-C5-HU1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lbY-00-N0J" kind="relationship" relationship="rootViewController" id="vsO-og-78I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STf-2A-Hhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-897" y="148"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="U8z-ii-OuR">
+            <objects>
+                <viewController id="lbY-00-N0J" customClass="ShopCartController" customModule="SwiftPods" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kts-b3-VQW"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZB3-Yw-GLO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s0u-JA-DwY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="购物车" id="Wgd-eG-7dr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NpA-6d-ynG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="91"/>
+        </scene>
+    </scenes>
+</document>

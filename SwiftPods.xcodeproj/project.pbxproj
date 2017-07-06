@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		34FBFB4EC68720913D3AE47F /* Pods_SwiftPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7203383BF98067629E6CCEAA /* Pods_SwiftPods.framework */; };
 		7B7B1E0E35358C2EA77DFFBA /* Pods_SwiftPodsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3878081DA8E17621166F5B21 /* Pods_SwiftPodsUITests.framework */; };
+		B621E5E11F0CCDCE00209CD6 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E01F0CCDCE00209CD6 /* CategoryCell.swift */; };
+		B621E5E31F0CD3B700209CD6 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E21F0CD3B700209CD6 /* CategoryViewModel.swift */; };
+		B621E5E51F0CD3D200209CD6 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E41F0CD3D200209CD6 /* CategoryModel.swift */; };
+		B621E5E71F0CE9DD00209CD6 /* ZJExtensionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E61F0CE9DD00209CD6 /* ZJExtensionSwift.swift */; };
 		B6B1EE6E1F0B31B900D2658F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6C1F0B31B900D2658F /* Main.storyboard */; };
 		B6B1EE701F0B31B900D2658F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6F1F0B31B900D2658F /* Assets.xcassets */; };
 		B6B1EE731F0B31B900D2658F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE711F0B31B900D2658F /* LaunchScreen.storyboard */; };
@@ -86,6 +90,10 @@
 		924F3ADD1B8EE877B6623866 /* Pods_SpeakEnglish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakEnglish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB963C2A8ADB2D5EF63AC7AF /* Pods-SpeakEnglishTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakEnglishTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakEnglishTests/Pods-SpeakEnglishTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B080E818FFC4A397AD4B3A28 /* Pods-SwiftPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPods/Pods-SwiftPods.release.xcconfig"; sourceTree = "<group>"; };
+		B621E5E01F0CCDCE00209CD6 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		B621E5E21F0CD3B700209CD6 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		B621E5E41F0CD3D200209CD6 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		B621E5E61F0CE9DD00209CD6 /* ZJExtensionSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJExtensionSwift.swift; sourceTree = "<group>"; };
 		B6B1EE651F0B31B900D2658F /* SwiftPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B1EE6D1F0B31B900D2658F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6B1EE6F1F0B31B900D2658F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -285,6 +293,7 @@
 		B6B1EE971F0B64D700D2658F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B621E5E61F0CE9DD00209CD6 /* ZJExtensionSwift.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -507,6 +516,7 @@
 		B6B1EEF31F0B83A200D2658F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B621E5E41F0CD3D200209CD6 /* CategoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -514,6 +524,7 @@
 		B6B1EEF41F0B83A200D2658F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B621E5E21F0CD3B700209CD6 /* CategoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -521,6 +532,7 @@
 		B6B1EEF51F0B83A200D2658F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B621E5E01F0CCDCE00209CD6 /* CategoryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1130,14 +1142,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B1EF051F0B842F00D2658F /* ShopCartController.swift in Sources */,
+				B621E5E71F0CE9DD00209CD6 /* ZJExtensionSwift.swift in Sources */,
+				B621E5E51F0CD3D200209CD6 /* CategoryModel.swift in Sources */,
 				B6B1EE9F1F0B656700D2658F /* ZJNavigationController.swift in Sources */,
 				B6B1EEA61F0B65A500D2658F /* BaseViewController.swift in Sources */,
+				B621E5E31F0CD3B700209CD6 /* CategoryViewModel.swift in Sources */,
 				B6B1EE9A1F0B64DD00D2658F /* AppDelegate.swift in Sources */,
 				B6B1EF011F0B840900D2658F /* CategoryController.swift in Sources */,
 				B6B1EF031F0B841D00D2658F /* FindController.swift in Sources */,
 				B6B1EEEF1F0B790E00D2658F /* MyController.swift in Sources */,
 				B6B1EE9D1F0B653700D2658F /* ZJTabBarController.swift in Sources */,
 				B6B1EEB61F0B66CB00D2658F /* HomeController.swift in Sources */,
+				B621E5E11F0CCDCE00209CD6 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

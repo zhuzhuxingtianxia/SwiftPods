@@ -11,6 +11,14 @@
 		7B7B1E0E35358C2EA77DFFBA /* Pods_SwiftPodsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3878081DA8E17621166F5B21 /* Pods_SwiftPodsUITests.framework */; };
 		B60638E61F147E7A003A3C78 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B642A4F91F0E35E6005F1712 /* Localizable.strings */; };
 		B606392A1F1481CE003A3C78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B642A4F41F0E35DB005F1712 /* InfoPlist.strings */; };
+		B60639381F14CD22003A3C78 /* Reflect+ArcFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B606392D1F14CD22003A3C78 /* Reflect+ArcFile.swift */; };
+		B60639391F14CD22003A3C78 /* Reflect+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B606392F1F14CD22003A3C78 /* Reflect+Parse.swift */; };
+		B606393A1F14CD22003A3C78 /* Reflect+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60639311F14CD22003A3C78 /* Reflect+Convert.swift */; };
+		B606393B1F14CD22003A3C78 /* Reflect+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60639331F14CD22003A3C78 /* Reflect+Class.swift */; };
+		B606393C1F14CD22003A3C78 /* Reflect+Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60639341F14CD22003A3C78 /* Reflect+Other.swift */; };
+		B606393D1F14CD22003A3C78 /* Reflect+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60639351F14CD22003A3C78 /* Reflect+Property.swift */; };
+		B606393E1F14CD22003A3C78 /* Reflect+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60639361F14CD22003A3C78 /* Reflect+Type.swift */; };
+		B606393F1F14CD22003A3C78 /* Reflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60639371F14CD22003A3C78 /* Reflect.swift */; };
 		B621E5E11F0CCDCE00209CD6 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E01F0CCDCE00209CD6 /* CategoryCell.swift */; };
 		B621E5E31F0CD3B700209CD6 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E21F0CD3B700209CD6 /* CategoryViewModel.swift */; };
 		B621E5E51F0CD3D200209CD6 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E41F0CD3D200209CD6 /* CategoryModel.swift */; };
@@ -100,6 +108,14 @@
 		B60638E21F134EBE003A3C78 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		B60638E31F134EBE003A3C78 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B60638E51F134EEB003A3C78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B606392D1F14CD22003A3C78 /* Reflect+ArcFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+ArcFile.swift"; sourceTree = "<group>"; };
+		B606392F1F14CD22003A3C78 /* Reflect+Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Parse.swift"; sourceTree = "<group>"; };
+		B60639311F14CD22003A3C78 /* Reflect+Convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Convert.swift"; sourceTree = "<group>"; };
+		B60639331F14CD22003A3C78 /* Reflect+Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Class.swift"; sourceTree = "<group>"; };
+		B60639341F14CD22003A3C78 /* Reflect+Other.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Other.swift"; sourceTree = "<group>"; };
+		B60639351F14CD22003A3C78 /* Reflect+Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Property.swift"; sourceTree = "<group>"; };
+		B60639361F14CD22003A3C78 /* Reflect+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Type.swift"; sourceTree = "<group>"; };
+		B60639371F14CD22003A3C78 /* Reflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflect.swift; sourceTree = "<group>"; };
 		B621E5E01F0CCDCE00209CD6 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		B621E5E21F0CD3B700209CD6 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		B621E5E41F0CD3D200209CD6 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
@@ -236,6 +252,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B606392B1F14CD22003A3C78 /* Reflect */ = {
+			isa = PBXGroup;
+			children = (
+				B606392C1F14CD22003A3C78 /* Coding */,
+				B606392E1F14CD22003A3C78 /* Dict2Model */,
+				B60639301F14CD22003A3C78 /* Model2Dict */,
+				B60639321F14CD22003A3C78 /* Reflect */,
+				B60639371F14CD22003A3C78 /* Reflect.swift */,
+			);
+			path = Reflect;
+			sourceTree = "<group>";
+		};
+		B606392C1F14CD22003A3C78 /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+				B606392D1F14CD22003A3C78 /* Reflect+ArcFile.swift */,
+			);
+			path = Coding;
+			sourceTree = "<group>";
+		};
+		B606392E1F14CD22003A3C78 /* Dict2Model */ = {
+			isa = PBXGroup;
+			children = (
+				B606392F1F14CD22003A3C78 /* Reflect+Parse.swift */,
+			);
+			path = Dict2Model;
+			sourceTree = "<group>";
+		};
+		B60639301F14CD22003A3C78 /* Model2Dict */ = {
+			isa = PBXGroup;
+			children = (
+				B60639311F14CD22003A3C78 /* Reflect+Convert.swift */,
+			);
+			path = Model2Dict;
+			sourceTree = "<group>";
+		};
+		B60639321F14CD22003A3C78 /* Reflect */ = {
+			isa = PBXGroup;
+			children = (
+				B60639331F14CD22003A3C78 /* Reflect+Class.swift */,
+				B60639341F14CD22003A3C78 /* Reflect+Other.swift */,
+				B60639351F14CD22003A3C78 /* Reflect+Property.swift */,
+				B60639361F14CD22003A3C78 /* Reflect+Type.swift */,
+			);
+			path = Reflect;
+			sourceTree = "<group>";
+		};
 		B6B1EE5C1F0B31B900D2658F = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +369,7 @@
 		B6B1EE971F0B64D700D2658F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B606392B1F14CD22003A3C78 /* Reflect */,
 				B621E5E61F0CE9DD00209CD6 /* ZJExtensionSwift.swift */,
 			);
 			path = Tools;
@@ -1160,16 +1224,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B1EF051F0B842F00D2658F /* ShopCartController.swift in Sources */,
+				B606393A1F14CD22003A3C78 /* Reflect+Convert.swift in Sources */,
 				B621E5E71F0CE9DD00209CD6 /* ZJExtensionSwift.swift in Sources */,
+				B60639381F14CD22003A3C78 /* Reflect+ArcFile.swift in Sources */,
 				B621E5E51F0CD3D200209CD6 /* CategoryModel.swift in Sources */,
+				B606393D1F14CD22003A3C78 /* Reflect+Property.swift in Sources */,
+				B60639391F14CD22003A3C78 /* Reflect+Parse.swift in Sources */,
 				B6B1EE9F1F0B656700D2658F /* ZJNavigationController.swift in Sources */,
+				B606393B1F14CD22003A3C78 /* Reflect+Class.swift in Sources */,
 				B6B1EEA61F0B65A500D2658F /* BaseViewController.swift in Sources */,
 				B621E5E31F0CD3B700209CD6 /* CategoryViewModel.swift in Sources */,
+				B606393E1F14CD22003A3C78 /* Reflect+Type.swift in Sources */,
 				B6B1EE9A1F0B64DD00D2658F /* AppDelegate.swift in Sources */,
 				B6B1EF011F0B840900D2658F /* CategoryController.swift in Sources */,
 				B6B1EF031F0B841D00D2658F /* FindController.swift in Sources */,
 				B6B1EEEF1F0B790E00D2658F /* MyController.swift in Sources */,
+				B606393C1F14CD22003A3C78 /* Reflect+Other.swift in Sources */,
 				B6B1EE9D1F0B653700D2658F /* ZJTabBarController.swift in Sources */,
+				B606393F1F14CD22003A3C78 /* Reflect.swift in Sources */,
 				B6B1EEB61F0B66CB00D2658F /* HomeController.swift in Sources */,
 				B621E5E11F0CCDCE00209CD6 /* CategoryCell.swift in Sources */,
 			);

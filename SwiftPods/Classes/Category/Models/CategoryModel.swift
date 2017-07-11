@@ -11,4 +11,16 @@ import UIKit
 class CategoryModel: NSObject {
     public var title:String?
     
+    init(dict : [String : Any]) {
+        super.init()
+        setValuesForKeys(dict)
+    }
+    
+    override func setValue(_ value: Any?, forKey key: String) {
+        super.setValue(value, forKey: key)
+    }
+    
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+    }
+    
 }

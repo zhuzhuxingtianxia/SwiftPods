@@ -7,16 +7,19 @@
 //
 
 import UIKit
-import SwiftyJSON
 
 class CategoryViewModel: NSObject {
     
     class func reloadSource(completion:(_ dataArray:Array<CategoryModel>)->Void) {
         let data = [["title":"SwiftyJSON"],["title":"Alamofire"],["title":"Kingfisher和SKPhotoBrowser"],["title":"RealmSwift"],["title":"RxSwift"],["title":"Charts"],]
+        var models = [CategoryModel]()
+        for dict in data {
+            
+            models.append(CategoryModel(dict: dict))
+        }
         
-        let json = JSON.init(rawValue: data)
+        completion(models)
         
-        //completion(json)
     }
     
 }

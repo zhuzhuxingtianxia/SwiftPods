@@ -11,7 +11,7 @@ import UIKit
 class CategoryController: BaseViewController {
     
    fileprivate let tableView = UITableView()
-
+    fileprivate var dataArray:[CategoryModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +19,8 @@ class CategoryController: BaseViewController {
         
         buildTableView()
         CategoryViewModel.reloadSource { (array) in
-            
+            dataArray = array
+            tableView.reloadData()
         }
         
     }
@@ -48,7 +49,7 @@ extension CategoryController:UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,7 +59,8 @@ extension CategoryController:UITableViewDelegate,UITableViewDataSource {
             cell = CategoryCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
             cell?.selectionStyle = .none
         }
-        cell?.textLabel?.text = "点击试试"
+        let model = dataArray[indexPath.row]
+        cell?.textLabel?.text = model.title
         return cell!
     }
     

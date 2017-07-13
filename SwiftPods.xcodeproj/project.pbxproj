@@ -23,6 +23,9 @@
 		B621E5E31F0CD3B700209CD6 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E21F0CD3B700209CD6 /* CategoryViewModel.swift */; };
 		B621E5E51F0CD3D200209CD6 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E41F0CD3D200209CD6 /* CategoryModel.swift */; };
 		B621E5E71F0CE9DD00209CD6 /* ZJExtensionSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B621E5E61F0CE9DD00209CD6 /* ZJExtensionSwift.swift */; };
+		B62C19B21F171547000E9E60 /* LonginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B11F171547000E9E60 /* LonginController.swift */; };
+		B62C19B41F171570000E9E60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B31F171570000E9E60 /* User.swift */; };
+		B62C19B61F1715ED000E9E60 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B51F1715ED000E9E60 /* UserManager.swift */; };
 		B6B1EE6E1F0B31B900D2658F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6C1F0B31B900D2658F /* Main.storyboard */; };
 		B6B1EE701F0B31B900D2658F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6F1F0B31B900D2658F /* Assets.xcassets */; };
 		B6B1EE731F0B31B900D2658F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE711F0B31B900D2658F /* LaunchScreen.storyboard */; };
@@ -120,6 +123,9 @@
 		B621E5E21F0CD3B700209CD6 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		B621E5E41F0CD3D200209CD6 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		B621E5E61F0CE9DD00209CD6 /* ZJExtensionSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJExtensionSwift.swift; sourceTree = "<group>"; };
+		B62C19B11F171547000E9E60 /* LonginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LonginController.swift; sourceTree = "<group>"; };
+		B62C19B31F171570000E9E60 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B62C19B51F1715ED000E9E60 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		B642A4F31F0E35DB005F1712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B642A4F51F0E35DE005F1712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B642A4F81F0E35E6005F1712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -508,6 +514,7 @@
 		B6B1EEB81F0B66D300D2658F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B62C19B11F171547000E9E60 /* LonginController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -515,6 +522,7 @@
 		B6B1EEB91F0B66D300D2658F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B62C19B31F171570000E9E60 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -522,6 +530,7 @@
 		B6B1EEBA1F0B66D300D2658F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B62C19B51F1715ED000E9E60 /* UserManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1229,6 +1238,7 @@
 				B60639381F14CD22003A3C78 /* Reflect+ArcFile.swift in Sources */,
 				B621E5E51F0CD3D200209CD6 /* CategoryModel.swift in Sources */,
 				B606393D1F14CD22003A3C78 /* Reflect+Property.swift in Sources */,
+				B62C19B61F1715ED000E9E60 /* UserManager.swift in Sources */,
 				B60639391F14CD22003A3C78 /* Reflect+Parse.swift in Sources */,
 				B6B1EE9F1F0B656700D2658F /* ZJNavigationController.swift in Sources */,
 				B606393B1F14CD22003A3C78 /* Reflect+Class.swift in Sources */,
@@ -1237,6 +1247,7 @@
 				B606393E1F14CD22003A3C78 /* Reflect+Type.swift in Sources */,
 				B6B1EE9A1F0B64DD00D2658F /* AppDelegate.swift in Sources */,
 				B6B1EF011F0B840900D2658F /* CategoryController.swift in Sources */,
+				B62C19B21F171547000E9E60 /* LonginController.swift in Sources */,
 				B6B1EF031F0B841D00D2658F /* FindController.swift in Sources */,
 				B6B1EEEF1F0B790E00D2658F /* MyController.swift in Sources */,
 				B606393C1F14CD22003A3C78 /* Reflect+Other.swift in Sources */,
@@ -1244,6 +1255,7 @@
 				B606393F1F14CD22003A3C78 /* Reflect.swift in Sources */,
 				B6B1EEB61F0B66CB00D2658F /* HomeController.swift in Sources */,
 				B621E5E11F0CCDCE00209CD6 /* CategoryCell.swift in Sources */,
+				B62C19B41F171570000E9E60 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

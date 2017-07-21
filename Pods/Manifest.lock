@@ -3,6 +3,7 @@ PODS:
   - Charts (3.0.2):
     - Charts/Core (= 3.0.2)
   - Charts/Core (3.0.2)
+  - ESPullToRefresh (2.6)
   - Kingfisher (3.10.2)
   - Realm (2.8.3):
     - Realm/Headers (= 2.8.3)
@@ -17,6 +18,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.5.0)
   - Charts (~> 3.0.2)
+  - ESPullToRefresh (~> 2.6.0)
   - Kingfisher (~> 3.10.2)
   - RealmSwift (~> 2.8.3)
   - RxSwift (~> 3.5.0)
@@ -27,6 +29,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  ESPullToRefresh: 85f4990acf87f78c6a1466bbbee7a75d7de24db9
   Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
   Realm: 3601ef091c8c499a31101d8563b991e75546cdce
   RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
@@ -35,6 +38,6 @@ SPEC CHECKSUMS:
   SwiftPullToRefresh: 11ffa1b9d886b2902bed64b05bd50e1e0f1201f1
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 523924e610bb3d437a56d0ddf036f4d60a8d428f
+PODFILE CHECKSUM: edf3352bf38abbe4ffcdd8fbe46ec7f24856c476
 
 COCOAPODS: 1.2.0

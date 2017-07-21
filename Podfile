@@ -20,6 +20,7 @@ target 'SwiftPods' do
   
   #下拉刷新
   pod 'SwiftPullToRefresh', '~> 1.1.0'
+  pod 'ESPullToRefresh', '~> 2.6.0'
   
   #响应式
   pod 'RxSwift', '~> 3.5.0'

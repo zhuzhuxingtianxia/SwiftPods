@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import SwiftPullToRefresh
+import ESPullToRefresh
 
 class CategoryController: BaseViewController {
     
-   fileprivate let tableView = UITableView()
+    fileprivate var tableView: UITableView!
     fileprivate var dataArray:[CategoryModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +33,21 @@ class CategoryController: BaseViewController {
     }
     
     fileprivate func buildTableView(){
-        tableView.frame = view.bounds
+        
+        tableView = UITableView.init(frame: view.frame, style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView.init()
         view.addSubview(tableView)
+        /*
+        guard let url = Bundle.main.url(forResource: "demo-big", withExtension: "gif"), let gifSouse = try? Data(contentsOf: url) else { return }
+ */
+        tableView.spr_setTextHeader {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+              self.tableView.spr_endRefreshing()
+            })
+        }
+        
     }
 
 

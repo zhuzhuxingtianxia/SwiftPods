@@ -1,19 +1,18 @@
 //
-//  HomeController.swift
+//  RealmSwiftVC.swift
 //  SwiftPods
 //
-//  Created by Jion on 2017/7/4.
+//  Created by Jion on 2017/7/25.
 //  Copyright © 2017年 天天. All rights reserved.
 //
 
 import UIKit
 
-class HomeController: BaseViewController {
+class RealmSwiftVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.navigationItem.title = "首页"
         view.backgroundColor = UIColor.white
     }
 

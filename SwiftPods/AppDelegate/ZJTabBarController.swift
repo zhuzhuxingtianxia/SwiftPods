@@ -12,13 +12,13 @@ class ZJTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         tabBar.barTintColor = UIColor.white
-        createSubControllers()
+        boaryCreateSubControllers()
+        self.delegate = self
     }
     
-    func createSubControllers() {
+    func boaryCreateSubControllers() {
         let classNames = ["Home","Category","Find","ShopCart","My"]
         let normalImages = ["tabBar_home_normal","tabBar_category_normal","tabBar_find_normal","tabBar_cart_normal","tabBar_myJD_normal",]
         let selectImages = ["tabBar_home_press","tabBar_category_press","tabBar_find_press","tabBar_cart_press","tabBar_myJD_press",]
@@ -48,20 +48,53 @@ class ZJTabBarController: UITabBarController {
         
     }
 
+    func createSubControllers() {
+        let classNames = ["HomeController","CategoryController","FindController","ShopCartController","MyController"]
+        let normalImages = ["tabBar_home_normal","tabBar_category_normal","tabBar_find_normal","tabBar_cart_normal","tabBar_myJD_normal",]
+        let selectImages = ["tabBar_home_press","tabBar_category_press","tabBar_find_press","tabBar_cart_press","tabBar_myJD_press",]
+        
+        for i in 0..<classNames.count {
+            
+            let vc = ZJClassFromString(className: classNames[i]).init()
+            let navc = ZJNavigationController.init(rootViewController: vc as! UIViewController)
+            
+            navc.tabBarItem.image = UIImage.init(named: normalImages[i])?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+            navc.tabBarItem.selectedImage = UIImage.init(named: selectImages[i])?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+            navc.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0)
+            
+            /*
+             navc?.tabBarItem.title = ""
+             
+             let noral = [NSForegroundColorAttributeName:UIColor.lightGray,NSFontAttributeName:UIFont.systemFont(ofSize: 10)]
+             
+             navc?.tabBarItem.setTitleTextAttributes(noral, for: UIControlState.normal)
+             
+             let selectAttri:[String:Any] = [NSForegroundColorAttributeName:UIColor.red,NSFontAttributeName:UIFont.systemFont(ofSize: 10)]
+             navc?.tabBarItem.setTitleTextAttributes(selectAttri, for: UIControlState.selected)
+             */
+            self.addChildViewController(navc)
+            
+        }
+        
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+private var isLogin = false
+extension ZJTabBarController:UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        let selectIndex = childViewControllers.index(of: viewController)
+        if (selectIndex==3 || selectIndex == 4) && !isLogin {
+            let login = UINavigationController.init(rootViewController: LonginController.init())
+            present(login, animated: true, completion: { 
+                isLogin = true
+            })
+        }
     }
-    */
-
 }

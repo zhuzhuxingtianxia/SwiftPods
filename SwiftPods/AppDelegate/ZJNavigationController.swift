@@ -12,7 +12,7 @@ class ZJNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationBar.isTranslucent = false
         // Do any additional setup after loading the view.
     }
 

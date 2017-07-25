@@ -26,7 +26,16 @@
 		B62C19B21F171547000E9E60 /* LonginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B11F171547000E9E60 /* LonginController.swift */; };
 		B62C19B41F171570000E9E60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B31F171570000E9E60 /* User.swift */; };
 		B62C19B61F1715ED000E9E60 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B51F1715ED000E9E60 /* UserManager.swift */; };
-		B68032451F21A1EF009D0F50 /* demo-big.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68032441F21A1EF009D0F50 /* demo-big.gif */; };
+		B68032471F25E9A8009D0F50 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032461F25E9A8009D0F50 /* Const.swift */; };
+		B68032CD1F25F68D009D0F50 /* demo-big.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68032CC1F25F68D009D0F50 /* demo-big.gif */; };
+		B68032CF1F25F69B009D0F50 /* demo-small.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68032CE1F25F69B009D0F50 /* demo-small.gif */; };
+		B68032D11F26E20B009D0F50 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032D01F26E20B009D0F50 /* Common.swift */; };
+		B68032D31F26E6D0009D0F50 /* SwiftyJSONController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032D21F26E6D0009D0F50 /* SwiftyJSONController.swift */; };
+		B68032D51F271408009D0F50 /* AlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032D41F271408009D0F50 /* AlamofireController.swift */; };
+		B68032D91F27149D009D0F50 /* SKPhotoBrowserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032D81F27149D009D0F50 /* SKPhotoBrowserVC.swift */; };
+		B68032DB1F2714B7009D0F50 /* RealmSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032DA1F2714B7009D0F50 /* RealmSwiftVC.swift */; };
+		B68032DD1F2714D0009D0F50 /* RxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032DC1F2714D0009D0F50 /* RxSwiftVC.swift */; };
+		B68032DF1F2714E6009D0F50 /* ChartsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032DE1F2714E6009D0F50 /* ChartsController.swift */; };
 		B6B1EE6E1F0B31B900D2658F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6C1F0B31B900D2658F /* Main.storyboard */; };
 		B6B1EE701F0B31B900D2658F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6F1F0B31B900D2658F /* Assets.xcassets */; };
 		B6B1EE731F0B31B900D2658F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE711F0B31B900D2658F /* LaunchScreen.storyboard */; };
@@ -131,7 +140,16 @@
 		B642A4F51F0E35DE005F1712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B642A4F81F0E35E6005F1712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B642A4FA1F0E35E8005F1712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B68032441F21A1EF009D0F50 /* demo-big.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-big.gif"; sourceTree = "<group>"; };
+		B68032461F25E9A8009D0F50 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		B68032CC1F25F68D009D0F50 /* demo-big.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-big.gif"; sourceTree = "<group>"; };
+		B68032CE1F25F69B009D0F50 /* demo-small.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-small.gif"; sourceTree = "<group>"; };
+		B68032D01F26E20B009D0F50 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		B68032D21F26E6D0009D0F50 /* SwiftyJSONController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONController.swift; sourceTree = "<group>"; };
+		B68032D41F271408009D0F50 /* AlamofireController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireController.swift; sourceTree = "<group>"; };
+		B68032D81F27149D009D0F50 /* SKPhotoBrowserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserVC.swift; sourceTree = "<group>"; };
+		B68032DA1F2714B7009D0F50 /* RealmSwiftVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmSwiftVC.swift; sourceTree = "<group>"; };
+		B68032DC1F2714D0009D0F50 /* RxSwiftVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftVC.swift; sourceTree = "<group>"; };
+		B68032DE1F2714E6009D0F50 /* ChartsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsController.swift; sourceTree = "<group>"; };
 		B6B1EE651F0B31B900D2658F /* SwiftPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B1EE6D1F0B31B900D2658F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6B1EE6F1F0B31B900D2658F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -379,6 +397,8 @@
 			children = (
 				B606392B1F14CD22003A3C78 /* Reflect */,
 				B621E5E61F0CE9DD00209CD6 /* ZJExtensionSwift.swift */,
+				B68032461F25E9A8009D0F50 /* Const.swift */,
+				B68032D01F26E20B009D0F50 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -580,7 +600,8 @@
 		B6B1EEF01F0B825300D2658F /* ImageSource */ = {
 			isa = PBXGroup;
 			children = (
-				B68032441F21A1EF009D0F50 /* demo-big.gif */,
+				B68032CE1F25F69B009D0F50 /* demo-small.gif */,
+				B68032CC1F25F68D009D0F50 /* demo-big.gif */,
 			);
 			path = ImageSource;
 			sourceTree = "<group>";
@@ -600,6 +621,12 @@
 			isa = PBXGroup;
 			children = (
 				B6B1EF001F0B840900D2658F /* CategoryController.swift */,
+				B68032D21F26E6D0009D0F50 /* SwiftyJSONController.swift */,
+				B68032D41F271408009D0F50 /* AlamofireController.swift */,
+				B68032D81F27149D009D0F50 /* SKPhotoBrowserVC.swift */,
+				B68032DA1F2714B7009D0F50 /* RealmSwiftVC.swift */,
+				B68032DC1F2714D0009D0F50 /* RxSwiftVC.swift */,
+				B68032DE1F2714E6009D0F50 /* ChartsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -905,7 +932,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B1EF0B1F0B95D800D2658F /* ShopCart.storyboard in Resources */,
-				B68032451F21A1EF009D0F50 /* demo-big.gif in Resources */,
+				B68032CF1F25F69B009D0F50 /* demo-small.gif in Resources */,
+				B68032CD1F25F68D009D0F50 /* demo-big.gif in Resources */,
 				B6B1EE731F0B31B900D2658F /* LaunchScreen.storyboard in Resources */,
 				B6B1EF091F0B95C300D2658F /* Find.storyboard in Resources */,
 				B6B1EE701F0B31B900D2658F /* Assets.xcassets in Resources */,
@@ -1237,7 +1265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B1EF051F0B842F00D2658F /* ShopCartController.swift in Sources */,
+				B68032D31F26E6D0009D0F50 /* SwiftyJSONController.swift in Sources */,
 				B606393A1F14CD22003A3C78 /* Reflect+Convert.swift in Sources */,
+				B68032DD1F2714D0009D0F50 /* RxSwiftVC.swift in Sources */,
+				B68032D11F26E20B009D0F50 /* Common.swift in Sources */,
+				B68032D91F27149D009D0F50 /* SKPhotoBrowserVC.swift in Sources */,
+				B68032D51F271408009D0F50 /* AlamofireController.swift in Sources */,
 				B621E5E71F0CE9DD00209CD6 /* ZJExtensionSwift.swift in Sources */,
 				B60639381F14CD22003A3C78 /* Reflect+ArcFile.swift in Sources */,
 				B621E5E51F0CD3D200209CD6 /* CategoryModel.swift in Sources */,
@@ -1255,6 +1288,9 @@
 				B6B1EF031F0B841D00D2658F /* FindController.swift in Sources */,
 				B6B1EEEF1F0B790E00D2658F /* MyController.swift in Sources */,
 				B606393C1F14CD22003A3C78 /* Reflect+Other.swift in Sources */,
+				B68032471F25E9A8009D0F50 /* Const.swift in Sources */,
+				B68032DB1F2714B7009D0F50 /* RealmSwiftVC.swift in Sources */,
+				B68032DF1F2714E6009D0F50 /* ChartsController.swift in Sources */,
 				B6B1EE9D1F0B653700D2658F /* ZJTabBarController.swift in Sources */,
 				B606393F1F14CD22003A3C78 /* Reflect.swift in Sources */,
 				B6B1EEB61F0B66CB00D2658F /* HomeController.swift in Sources */,

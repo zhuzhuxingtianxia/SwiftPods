@@ -12,8 +12,9 @@ class FindController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "发现"
+        view.backgroundColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {

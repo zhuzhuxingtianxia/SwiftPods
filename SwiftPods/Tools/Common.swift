@@ -18,5 +18,14 @@ extension NSObject {
         return objc
     }
 
+//MARK: -- 转字符
+    func getString(byObject object:Any) -> String {
+        guard let data =  try? JSONSerialization.data(withJSONObject: object, options: JSONSerialization.WritingOptions.prettyPrinted) else{ return ""}
+        guard let jsonString = String.init(data: data, encoding: String.Encoding.utf8) else {
+            return ""
+        }
+        
+        return jsonString
+    }
     
 }

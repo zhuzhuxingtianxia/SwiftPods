@@ -28,4 +28,13 @@ extension NSObject {
         return jsonString
     }
     
+//MARK: -- 获取缓存路径
+  func getCachesPath() -> String{
+        let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!
+        return path
+    }
+
+    
 }
+
+

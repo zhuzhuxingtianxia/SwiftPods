@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class AlamofireController: UIViewController {
 
@@ -54,7 +55,7 @@ class AlamofireController: UIViewController {
         case 1:
             alamofireTest4()
         case 2:
-            alamofireUpload()
+            openPhotoAlbum()
         default:break
         }
     }
@@ -149,22 +150,46 @@ class AlamofireController: UIViewController {
         }
     }
 
-
+//MARK : 使用相册
+    func openPhotoAlbum() {
+        guard UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) else {
+            print("相册不可用")
+            return
+        }
+       let imgePicker = UIImagePickerController.init()
+        imgePicker.delegate = self
+        imgePicker.sourceType = .photoLibrary
+        imgePicker.setEditing(true, animated: true)
+        present(imgePicker, animated: true) { 
+            
+        }
+    }
     
-    func alamofireUpload() {
-        let url = "https://api.youjuke.com"
-        let image = UIImage(named: "image.png")
-        let param:[String:AnyObject] = [:]
+    //上传资源
+    func alamofireUpload(image:UIImage?) {
+        let url = "https://preapi.51youjuke.com/materialMall/management_interface"
+        let otherParm = ["function_name":"upload_mall_order","params":["area_id":"726","distributor_id":"15","mall_id":"1","order_date":"2017-07-28","pay_type":"1","user_id":"52253","total_price":"888","order_no":NSNumber.init(value: 2004)]] as [String : Any]
+        let jsonParm = getString(byObject: otherParm)
+        let param:[String:String] = ["json_msg":jsonParm]
+        
+        //设置无效证书访问
+        let manager = SessionManager.default
+        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
         
         Alamofire.upload(multipartFormData: { (multipartFormData) in
             
             if let _image = image {
-                if let imageData = UIImageJPEGRepresentation(_image, 0.5) { multipartFormData.append(imageData, withName: "file")
+                if let imageData = UIImageJPEGRepresentation(_image, 0.3) {
+                    //let path = self.getCachesPath()
+                   // multipartFormData.append(imageData, withName: "file")
+                    multipartFormData.append(imageData, withName: "file", fileName: "\(NSDate.init())" + ".png", mimeType: "image/png")
+
                 }
             }
             
             for (key, value) in param {
-                multipartFormData.append((value.stringValue).data(using: String.Encoding.utf8)!, withName: key)
+               
+                multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
                
             }
             
@@ -172,7 +197,21 @@ class AlamofireController: UIViewController {
             switch  formDataEncodingResult{
                 case .success(let uploadData, _, _):
                     uploadData.responseJSON(completionHandler: { (dataResponse) in
-                         print("Result: \(dataResponse.result)")
+                        guard dataResponse.error == nil else {
+                            print(dataResponse.error.debugDescription)
+                            return
+                        }
+                        
+                        if let data = dataResponse.data, let utf8Text = String(data: data, encoding: .utf8) {
+                            print("Upload: \(utf8Text)")
+                            let jsonData = JSON.init(parseJSON: utf8Text)
+                            if jsonData["status"] == 200 {
+                                print("成功")
+                            }else{
+                                print(jsonData["message"])
+                            }
+                        }
+                        
                     })
                 case .failure(let encodingError):
                       print(encodingError)
@@ -190,3 +229,20 @@ class AlamofireController: UIViewController {
     
 
 }
+
+extension AlamofireController:UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let img = info[UIImagePickerControllerOriginalImage]
+        let referenceURL = info[UIImagePickerControllerReferenceURL]!
+        print(referenceURL)
+        
+        alamofireUpload(image: img as? UIImage)
+        dismiss(animated: true) { 
+            
+        }
+    }
+    
+    
+}
+
+

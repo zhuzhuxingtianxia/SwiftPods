@@ -10,18 +10,20 @@ target 'SwiftPods' do
   pod 'Alamofire', '~> 4.5.0'
   #解析库
   pod 'SwiftyJSON', '~> 3.1.4'
+  pod 'HandyJSON', '~> 1.7.2'
   #类似SDWebImage 还有AlamofireImage
   pod 'Kingfisher', '~> 3.10.2'
   
   #数据库
   pod 'RealmSwift', '~> 2.8.3'
-  #图片预览
+  #图片预览 依赖SDWebImage
   pod 'SKPhotoBrowser', '~> 4.0.1'
-  
+  pod 'SDWebImage', '~>3.8'
   #下拉刷新
   pod 'SwiftPullToRefresh', '~> 1.1.0'
   pod 'ESPullToRefresh', '~> 2.6.0'
-  
+  #加载中 swift3.x
+  pod 'PKHUD', '~> 4.0'
   #响应式
   pod 'RxSwift', '~> 3.5.0'
   #图表库
@@ -48,7 +50,7 @@ target 'SpeakEnglish' do
     #网络请求库
     pod 'Alamofire', '~> 4.5.0'
     #解析库
-    pod 'SwiftyJSON', '~> 3.1.4'
+    pod 'HandyJSON', '~> 1.7.2'
     #类似SDWebImage 还有AlamofireImage
     pod 'Kingfisher', '~> 3.10.2'
     

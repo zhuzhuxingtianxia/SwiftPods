@@ -28,6 +28,15 @@ extension NSObject {
         return jsonString
     }
     
+   class func getString(byObject object:Any) -> String {
+        guard let data =  try? JSONSerialization.data(withJSONObject: object, options: JSONSerialization.WritingOptions.prettyPrinted) else{ return ""}
+        guard let jsonString = String.init(data: data, encoding: String.Encoding.utf8) else {
+            return ""
+        }
+        
+        return jsonString
+    }
+    
 //MARK: -- 获取缓存路径
   func getCachesPath() -> String{
         let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!

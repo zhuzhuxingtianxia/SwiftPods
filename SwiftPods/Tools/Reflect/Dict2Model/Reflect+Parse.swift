@@ -39,7 +39,7 @@ extension Reflect{
     }
     
     
-    class func parse(dict dict: NSDictionary) -> Self{
+    class func parse(dict: NSDictionary) -> Self{
         
         let model = self.init()
         
@@ -100,8 +100,8 @@ extension Reflect{
                             }else{ //子模型没有初始化
                                 
                                 //先主动初始化
-                                var tn = type.typeName ?? ""
-                                var cls = ClassFromString(str: tn)
+                                let tn = type.typeName ?? ""
+                                let cls = ClassFromString(str: tn)
                                 model.setValue((cls as! Reflect.Type).parse(dict: dict[key] as! NSDictionary), forKeyPath: name)
                             }
                         }

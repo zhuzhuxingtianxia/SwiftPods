@@ -7,19 +7,28 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SKCollectionCell: UICollectionViewCell {
     
-    private lazy var backImageView: UIImageView = {
+    lazy var backImageView: UIImageView = {
         let backImageView = UIImageView()
         backImageView.backgroundColor = UIColor.lightGray
         return backImageView
     }()
     
+    var imgUrl: String! {
+        willSet {
+            backImageView.kf.setImage(with: URL.init(string: newValue))
+        }
+    }
+    
 // MARK: - 便利构造方法
     override init(frame: CGRect) {
+        imgUrl = String.init()
         super.init(frame: frame)
         addSubview(backImageView)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

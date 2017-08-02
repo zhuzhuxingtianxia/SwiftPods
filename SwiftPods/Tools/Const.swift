@@ -12,3 +12,8 @@ import UIKit
 public let ZJNavigationH:CGFloat = 64
 public let ZJScreenWidth:CGFloat = UIScreen.main.bounds.size.width
 public let ZJScreenHeight:CGFloat = UIScreen.main.bounds.size.height
+
+
+// MARK: - URL
+public let imgSetUrl = "get_decoration_renderings"
+

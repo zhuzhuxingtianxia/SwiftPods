@@ -32,7 +32,7 @@ class SKPhotoBrowserVC: UIViewController {
     }()
     
     var dataArray: Array<SKPhotoBrowserModel>?
-    var images = [SKPhoto]()
+    var images: Array<SKPhoto>?
     
 //MARK: -- cycle life
     
@@ -75,15 +75,19 @@ class SKPhotoBrowserVC: UIViewController {
                 
                 let result = jsonData["data"]
                 self?.dataArray = SKPhotoBrowserModel.dcObjectArrayWithKeyValuesArray(result as! NSArray) as? Array<SKPhotoBrowserModel>
-                for value in (self?.dataArray)! {
+                
+                self?.images = self?.dataArray?.map{ value in
+                    
                     let photo = SKPhoto.photoWithImageURL(value.img_url!)
                     photo.caption = value.img_title
                     // you can use image cache by true(NSCache)
                     photo.shouldCachePhotoURLImage = false
-                    self?.images.append(photo)
+                    
+                    return photo
                 }
                 
                 self?.collectionView.reloadData()
+                
             }else{
                 HUD.flash(.error, delay: 1.0)
                 print(jsonData["message"]!)
@@ -130,7 +134,7 @@ extension SKPhotoBrowserVC:UICollectionViewDelegate,UICollectionViewDataSource {
         
         // some image for baseImage
         let originImage = cell.backImageView.image
-        let browser = SKPhotoBrowser(originImage: originImage ?? UIImage() , photos: images, animatedFromView: cell)
+        let browser = SKPhotoBrowser(originImage: originImage ?? UIImage() , photos: images!, animatedFromView: cell)
         browser.initializePageIndex(indexPath.row)
         browser.delegate = self
         //browser.updateCloseButton(UIImage(named: "image1.jpg")!)

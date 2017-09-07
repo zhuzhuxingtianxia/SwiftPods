@@ -94,6 +94,11 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
 		<key>SwiftPullToRefresh.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -117,6 +122,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0B6A0701991FE1DABD14FD396CAF965E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>10F0C3C80828CC88CE8154B17E6E0B8F</key>
 		<dict>
 			<key>primary</key>
@@ -133,6 +143,11 @@
 			<true/>
 		</dict>
 		<key>1DFF4FCCE67311DF9EA992554F6BA586</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>22BE7B03C6343E1BAAC8F1D80D8F280F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -158,6 +173,11 @@
 			<true/>
 		</dict>
 		<key>290BF674298A0800C758ED4DD3854380</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2B0C6AB49EE62B2D30750863E7D2EADD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -198,6 +218,11 @@
 			<true/>
 		</dict>
 		<key>3A6C71C1F67041C289EBE4B79FC0DDA4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3CC62139A96FF50AF2CA920E7D2D44F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -257,6 +282,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>693E440C33352858F05958622A3613FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6ED17CEB5E84B5B19BA8DB7FEFB53EB5</key>
 		<dict>
 			<key>primary</key>
@@ -273,6 +303,11 @@
 			<true/>
 		</dict>
 		<key>724B4914ABE9CB8947DFE3FB257127B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76319417B0E0204CCBCC606F623C4A3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -318,6 +353,11 @@
 			<true/>
 		</dict>
 		<key>9343E839237AEDDCA9A1545ABC2D4A5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>93A861E5007D29A9E25CC2A9B127700E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

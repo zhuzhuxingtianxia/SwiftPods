@@ -17,6 +17,7 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SKPhotoBrowser (4.0.1)
+  - SnapKit (3.2.0)
   - SwiftPullToRefresh (1.1.0)
   - SwiftyJSON (3.1.4)
 
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - RxSwift (~> 3.5.0)
   - SDWebImage (~> 3.8)
   - SKPhotoBrowser (~> 4.0.1)
+  - SnapKit (~> 3.2.0)
   - SwiftPullToRefresh (~> 1.1.0)
   - SwiftyJSON (~> 3.1.4)
 
@@ -46,9 +48,10 @@ SPEC CHECKSUMS:
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SKPhotoBrowser: 3a7c6fc02aa1620ab17253a47a49fafda46536e8
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftPullToRefresh: 11ffa1b9d886b2902bed64b05bd50e1e0f1201f1
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 9f5980083e6cfcaf6ccf4ea36d8c590f6eba2194
+PODFILE CHECKSUM: 35109c7b389077784942d992c15964daf2e29e02
 
 COCOAPODS: 1.2.0

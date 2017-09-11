@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftyJSON
-
+import HandyJSON
 class SwiftyJSONController: UIViewController {
 
     override func viewDidLoad() {
@@ -17,6 +17,7 @@ class SwiftyJSONController: UIViewController {
         view.backgroundColor = UIColor.white
         
         swiftJSON()
+        handyJSON()
     }
 
     func swiftJSON() {
@@ -46,6 +47,26 @@ class SwiftyJSONController: UIViewController {
         print("json3 == \(json3)")
         
     }
+    
+    func handyJSON() {
+       let soure = ["name":"老王","age":"20","mobile":"1387189393"] as [String : Any]
+    
+        if let handyModel = HandyModel.deserialize(from: soure as NSDictionary) {
+            print(handyModel.toJSON()!)
+            print(handyModel.toJSONString()!)
+            print(handyModel.toJSONString(prettyPrint: true)!)
+            print(handyModel.toJSONValue()!)
+        }
+        
+        //数组
+        let array = [soure,soure]
+        let  handyModelArray = [HandyModel].deserialize(from: array as NSArray)
+        handyModelArray?.forEach({ (handyModel) in
+            print(handyModel ?? "")
+        })
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

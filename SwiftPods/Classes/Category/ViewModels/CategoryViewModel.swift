@@ -11,7 +11,7 @@ import UIKit
 class CategoryViewModel: NSObject {
     
     class func reloadSource(completion:(_ dataArray:Array<CategoryModel>)->Void) {
-        let data = [["title":"SwiftyJSON"],["title":"Alamofire"],["title":"Kingfisher和SKPhotoBrowser"],["title":"RealmSwift"],["title":"RxSwift"],["title":"Charts"],]
+        let data = [["title":"SwiftyJSON和HandyJSON"],["title":"Alamofire"],["title":"Kingfisher和SKPhotoBrowser"],["title":"SnapKit其前身是 Masonry"],["title":"RealmSwift"],["title":"RxSwift"],["title":"Charts"],]
         var models = [CategoryModel]()
         for dict in data {
             

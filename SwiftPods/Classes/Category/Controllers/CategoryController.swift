@@ -95,19 +95,24 @@ extension CategoryController:UITableViewDelegate,UITableViewDataSource {
                 let alamofire = AlamofireController.init()
                 alamofire.title = model.title;
                 navigationController?.pushViewController(alamofire, animated: true)
+            
             case 2:
-                let skPhotoBrowser = SKPhotoBrowserVC.init()
-                skPhotoBrowser.title = model.title;
-                navigationController?.pushViewController(skPhotoBrowser, animated: true)
+                 let skPhotoBrowser = SKPhotoBrowserVC.init()
+                  skPhotoBrowser.title = model.title;
+                  navigationController?.pushViewController(skPhotoBrowser, animated: true)
             case 3:
+                  let snapVC = SnapController.init()
+                  snapVC.title = model.title;
+                  navigationController?.pushViewController(snapVC, animated: true)
+            case 4:
                 let realmSwift = RealmSwiftVC.init()
                 realmSwift.title = model.title;
                 navigationController?.pushViewController(realmSwift, animated: true)
-            case 4:
+            case 5:
                 let rxSwiftVC = RxSwiftVC.init()
                 rxSwiftVC.title = model.title;
                 navigationController?.pushViewController(rxSwiftVC, animated: true)
-            case 5:
+            case 6:
                 let chartsC = ChartsController.init()
                 chartsC.title = model.title;
                 navigationController?.pushViewController(chartsC, animated: true)

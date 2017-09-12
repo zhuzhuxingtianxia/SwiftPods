@@ -14,6 +14,7 @@ class ChartsController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
+        title = "图表库"
     }
 
     override func didReceiveMemoryWarning() {

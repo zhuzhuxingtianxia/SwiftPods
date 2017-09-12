@@ -1,6 +1,0 @@
-framework module Pods_SpeakEnglishTests {
-  umbrella header "Pods-SpeakEnglishTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

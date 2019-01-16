@@ -197,6 +197,7 @@
 		B6B1EF0A1F0B95D800D2658F /* ShopCart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShopCart.storyboard; sourceTree = "<group>"; };
 		B6B1EF0C1F0B95E900D2658F /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		B6B1EF0E1F0B97F200D2658F /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B6FFAA06211AF69D00F4DF32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		B7CEB68C2F8B8DB29183EF53 /* Pods-SwiftPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPods/Pods-SwiftPods.debug.xcconfig"; sourceTree = "<group>"; };
 		BC75CC97EC65D43606E7C0A5 /* Pods-SwiftPodsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPodsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPodsTests/Pods-SwiftPodsTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB4621BDF2639417F784B714 /* Pods-SpeakEnglishUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakEnglishUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakEnglishUITests/Pods-SpeakEnglishUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1411,6 +1412,7 @@
 			children = (
 				B6B1EE6D1F0B31B900D2658F /* Base */,
 				B60638DE1F134EBD003A3C78 /* zh-Hans */,
+				B6FFAA06211AF69D00F4DF32 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

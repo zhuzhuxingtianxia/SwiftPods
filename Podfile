@@ -24,6 +24,9 @@ target 'SwiftPods' do
   pod 'ESPullToRefresh', '~> 2.6.0'
   #加载中 swift3.x
   pod 'PKHUD', '~> 4.0'
+  #toast提示
+  pod 'NVActivityIndicatorView', '~> 4.0.0'
+  
   #布局库  其前身是 Masonry
   #学习参考：http://blog.csdn.net/jsd0915/article/details/77852822
   pod 'SnapKit', '~> 3.2.0'

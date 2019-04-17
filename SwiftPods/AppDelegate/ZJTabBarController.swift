@@ -35,12 +35,12 @@ class ZJTabBarController: UITabBarController {
             /*
             navc?.tabBarItem.title = ""
             
-            let noral = [NSForegroundColorAttributeName:UIColor.lightGray,NSFontAttributeName:UIFont.systemFont(ofSize: 10)]
+            let noral = [NSAttributedString.Key.foregroundColor:UIColor.lightGray,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 10)]
             
-            navc?.tabBarItem.setTitleTextAttributes(noral, for: UIControlState.normal)
+            navc?.tabBarItem.setTitleTextAttributes(noral, for: UIControl.State.normal)
             
-            let selectAttri:[String:Any] = [NSForegroundColorAttributeName:UIColor.red,NSFontAttributeName:UIFont.systemFont(ofSize: 10)]
-            navc?.tabBarItem.setTitleTextAttributes(selectAttri, for: UIControlState.selected)
+            let selectAttri:[NSAttributedString.Key:Any] = [NSAttributedString.Key.foregroundColor:UIColor.red,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 10)]
+            navc?.tabBarItem.setTitleTextAttributes(selectAttri, for: UIControl.State.selected)
             */
             self.addChild(navc!)
             

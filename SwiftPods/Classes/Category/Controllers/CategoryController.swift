@@ -76,7 +76,7 @@ extension CategoryController:UITableViewDelegate,UITableViewDataSource {
         
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
-            cell = CategoryCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+            cell = CategoryCell.init(style: .default, reuseIdentifier: "cell")
             cell?.selectionStyle = .none
         }
         let model = dataArray[indexPath.row]

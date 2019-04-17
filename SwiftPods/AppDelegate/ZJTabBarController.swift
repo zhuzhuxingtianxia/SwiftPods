@@ -28,9 +28,9 @@ class ZJTabBarController: UITabBarController {
             let stotyboard = UIStoryboard.init(name: classNames[i], bundle: nil)
             let navc = stotyboard.instantiateInitialViewController()
             
-            navc?.tabBarItem.image = UIImage.init(named: normalImages[i])?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-            navc?.tabBarItem.selectedImage = UIImage.init(named: selectImages[i])?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-            navc?.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0)
+            navc?.tabBarItem.image = UIImage.init(named: normalImages[i])?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+            navc?.tabBarItem.selectedImage = UIImage.init(named: selectImages[i])?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+            navc?.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
             
             /*
             navc?.tabBarItem.title = ""
@@ -42,7 +42,7 @@ class ZJTabBarController: UITabBarController {
             let selectAttri:[String:Any] = [NSForegroundColorAttributeName:UIColor.red,NSFontAttributeName:UIFont.systemFont(ofSize: 10)]
             navc?.tabBarItem.setTitleTextAttributes(selectAttri, for: UIControlState.selected)
             */
-            self.addChildViewController(navc!)
+            self.addChild(navc!)
             
         }
         
@@ -58,9 +58,9 @@ class ZJTabBarController: UITabBarController {
             let vc = ZJClassFromString(className: classNames[i]).init()
             let navc = ZJNavigationController.init(rootViewController: vc as! UIViewController)
             
-            navc.tabBarItem.image = UIImage.init(named: normalImages[i])?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-            navc.tabBarItem.selectedImage = UIImage.init(named: selectImages[i])?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-            navc.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0)
+            navc.tabBarItem.image = UIImage.init(named: normalImages[i])?.withRenderingMode(.alwaysOriginal)
+            navc.tabBarItem.selectedImage = UIImage.init(named: selectImages[i])?.withRenderingMode(.alwaysOriginal)
+            navc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
             
             /*
              navc?.tabBarItem.title = ""
@@ -72,7 +72,7 @@ class ZJTabBarController: UITabBarController {
              let selectAttri:[String:Any] = [NSForegroundColorAttributeName:UIColor.red,NSFontAttributeName:UIFont.systemFont(ofSize: 10)]
              navc?.tabBarItem.setTitleTextAttributes(selectAttri, for: UIControlState.selected)
              */
-            self.addChildViewController(navc)
+            self.addChild(navc)
             
         }
         
@@ -89,7 +89,7 @@ class ZJTabBarController: UITabBarController {
 private var isLogin = false
 extension ZJTabBarController:UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        let selectIndex = childViewControllers.index(of: viewController)
+        let selectIndex = children.index(of: viewController)
         if (selectIndex==3 || selectIndex == 4) && !isLogin {
             let login = UINavigationController.init(rootViewController: LonginController.init())
             present(login, animated: true, completion: { 

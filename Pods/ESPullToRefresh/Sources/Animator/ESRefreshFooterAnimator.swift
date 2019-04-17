@@ -27,9 +27,9 @@ import UIKit
 
 open class ESRefreshFooterAnimator: UIView, ESRefreshProtocol, ESRefreshAnimatorProtocol {
 
-    open var loadingMoreDescription: String = "Loading more"
-    open var noMoreDataDescription: String  = "No more data"
-    open var loadingDescription: String     = "Loading..."
+    open var loadingMoreDescription: String = NSLocalizedString("Loading more", comment: "")
+    open var noMoreDataDescription: String  = NSLocalizedString("No more data", comment: "")
+    open var loadingDescription: String     = NSLocalizedString("Loading...", comment: "")
 
     open var view: UIView { return self }
     open var duration: TimeInterval = 0.3
@@ -47,7 +47,7 @@ open class ESRefreshFooterAnimator: UIView, ESRefreshProtocol, ESRefreshAnimator
     }()
     
     fileprivate let indicatorView: UIActivityIndicatorView = {
-        let indicatorView = UIActivityIndicatorView.init(activityIndicatorStyle: .gray)
+        let indicatorView = UIActivityIndicatorView.init(style: .gray)
         indicatorView.isHidden = true
         return indicatorView
     }()

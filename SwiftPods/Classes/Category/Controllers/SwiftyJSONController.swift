@@ -33,7 +33,7 @@ class SwiftyJSONController: UIViewController {
         guard let data =  try? JSONSerialization.data(withJSONObject: soure, options: JSONSerialization.WritingOptions.prettyPrinted) else{ return }
         print("data = \(data)")
         
-        let json2 = JSON.init(data: data)
+        let json2 = try! JSON.init(data: data)
         print("json2 == \(json2)")
         
         /*
@@ -55,7 +55,6 @@ class SwiftyJSONController: UIViewController {
             print(handyModel.toJSON()!)
             print(handyModel.toJSONString()!)
             print(handyModel.toJSONString(prettyPrint: true)!)
-            print(handyModel.toJSONValue()!)
         }
         
         //数组

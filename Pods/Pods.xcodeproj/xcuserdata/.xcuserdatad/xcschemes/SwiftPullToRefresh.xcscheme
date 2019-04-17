@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3CC62139A96FF50AF2CA920E7D2D44F3'
-               BlueprintName = 'SwiftPullToRefresh'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftPullToRefresh.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AE2B56EC8B6327488CCAB08F81480F2A"
+               BlueprintName = "SwiftPullToRefresh"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "SwiftPullToRefresh.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

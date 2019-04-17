@@ -11,12 +11,12 @@ import UIKit
 class LonginController: BaseViewController {
 
     private lazy var login: UIButton = {
-        let login = UIButton.init(type: UIButtonType.system)
+        let login = UIButton.init(type: .system)
         login.translatesAutoresizingMaskIntoConstraints = false
-        login.setTitle("登录", for: UIControlState.normal)
+        login.setTitle("登录", for: .normal)
         login.setTitleColor(UIColor.white, for: .normal)
         login.backgroundColor = UIColor.blue
-        login.addTarget(self, action: #selector(LonginController.loginAction(sender:)), for: UIControlEvents.touchUpInside)
+        login.addTarget(self, action: #selector(LonginController.loginAction(sender:)), for: .touchUpInside)
         return login
     }()
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class LonginController: BaseViewController {
         view.addSubview(login)
     }
 
-    func loginAction(sender:UIButton) {
+    @objc func loginAction(sender:UIButton) {
         dismiss(animated: true) { 
             
         }
@@ -36,8 +36,8 @@ class LonginController: BaseViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[login]-10-|", options: NSLayoutFormatOptions.init(rawValue: 0), metrics: [:], views: ["login":login]))
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[login(40)]-bottom-|", options: NSLayoutFormatOptions.init(rawValue: 0), metrics: ["bottom":150], views: ["login":login]))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[login]-10-|", options: NSLayoutConstraint.FormatOptions.init(rawValue: 0), metrics: [:], views: ["login":login]))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[login(40)]-bottom-|", options: NSLayoutConstraint.FormatOptions.init(rawValue: 0), metrics: ["bottom":150], views: ["login":login]))
  
     }
     override func didReceiveMemoryWarning() {

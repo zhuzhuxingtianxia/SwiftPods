@@ -18,7 +18,7 @@ final class UserManager {
         let url = "\(usersBaseURL)"
         Alamofire.request(url).responseJSON { response in
             if let jsons = response.result.value as? [[String: Any]] {
-                let users = Users.dcObjectArrayWithKeyValuesArray(jsons as NSArray)
+                let users = Users.dcObjectArrayWithKeyValuesArray((jsons as NSArray) as! [Any])
                 completion(users as! [User])
             }
         }

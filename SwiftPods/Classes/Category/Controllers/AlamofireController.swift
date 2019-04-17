@@ -15,14 +15,14 @@ class AlamofireController: UIViewController {
     let segment = { () -> UISegmentedControl in 
         let segment = UISegmentedControl(items:["response","responseJSON","invalidCertificates"])
         segment.frame = CGRect.init(x: 10, y: 20, width: ZJScreenWidth - 20, height: 40)
-        segment.addTarget(self, action: #selector(AlamofireController.segmentAction(sender:)), for: UIControlEvents.valueChanged)
+        segment.addTarget(self, action: #selector(AlamofireController.segmentAction(sender:)), for: .valueChanged)
         return segment
     }()
     
     let segment1 = { () -> UISegmentedControl in
         let segment = UISegmentedControl(items:["responseString","responseData","Upload"])
         segment.frame = CGRect.init(x: 10, y: 80, width: ZJScreenWidth - 20, height: 40)
-        segment.addTarget(self, action: #selector(AlamofireController.segmentClick(sender:)), for: UIControlEvents.valueChanged)
+        segment.addTarget(self, action: #selector(AlamofireController.segmentClick(sender:)), for: .valueChanged)
         return segment
     }()
 
@@ -37,7 +37,7 @@ class AlamofireController: UIViewController {
         view.addSubview(segment1)
     }
     
-    func segmentAction(sender:UISegmentedControl) {
+   @objc func segmentAction(sender:UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
             alamofireTest1()
@@ -48,7 +48,7 @@ class AlamofireController: UIViewController {
         default:break
         }
     }
-    func segmentClick(sender:UISegmentedControl) {
+    @objc func segmentClick(sender:UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
             alamofireTest3()
@@ -152,7 +152,7 @@ class AlamofireController: UIViewController {
 
 //MARK : 使用相册
     func openPhotoAlbum() {
-        guard UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) else {
+        guard UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary) else {
             print("相册不可用")
             return
         }
@@ -179,7 +179,7 @@ class AlamofireController: UIViewController {
         Alamofire.upload(multipartFormData: { (multipartFormData) in
             
             if let _image = image {
-                if let imageData = UIImageJPEGRepresentation(_image, 0.3) {
+                if let imageData = _image.jpegData(compressionQuality: 0.3) {
                     //let path = self.getCachesPath()
                    // multipartFormData.append(imageData, withName: "file")
                     multipartFormData.append(imageData, withName: "file", fileName: "\(NSDate.init())" + ".png", mimeType: "image/png")
@@ -231,17 +231,17 @@ class AlamofireController: UIViewController {
 }
 
 extension AlamofireController:UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let img = info[UIImagePickerControllerOriginalImage]
-        let referenceURL = info[UIImagePickerControllerReferenceURL]!
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let img = info[.originalImage]
+        let referenceURL = info[.referenceURL]!
         print(referenceURL)
         
         alamofireUpload(image: img as? UIImage)
-        dismiss(animated: true) { 
+        dismiss(animated: true) {
             
         }
     }
-    
     
 }
 

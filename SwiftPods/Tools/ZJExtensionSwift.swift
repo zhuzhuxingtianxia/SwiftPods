@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DCSwiftExtensionType : NSString {
+enum DCSwiftExtensionType : String {
     case Int = "Int"
     case NSNumber = "NSNumber"
     case NSString = "NSString"
@@ -17,27 +17,27 @@ enum DCSwiftExtensionType : NSString {
 }
 
 extension NSObject {
-    class func dcObjectWithKeyValues(_ keyValues:NSDictionary) -> AnyObject{
+    class func dcObjectWithKeyValues(_ keyValues:[String:Any]) -> AnyObject{
         return dcObjectWithKeyValues(keyValues,self)
     }
     
-    class func dcObjectArrayWithKeyValuesArray(_ array:NSArray) -> [AnyObject]{
+    class func dcObjectArrayWithKeyValuesArray(_ array:[Any]) -> [AnyObject]{
         return dcObjectArrayWithKeyValuesArray(array, self)
     }
     
     
-    fileprivate class func dcObjectWithKeyValues(_ keyValues:NSDictionary ,  _ currentClass:AnyClass ) -> AnyObject{
+    fileprivate class func dcObjectWithKeyValues(_ keyValues:[String:Any] ,  _ currentClass:AnyClass ) -> AnyObject{
         let model = self.init()
         let properties = self.getProperties(typeClass: currentClass)
         model.setValuesForProperties(properties, keyValues: keyValues)
         return model
     }
     
-    fileprivate class func dcObjectArrayWithKeyValuesArray(_ array:NSArray , _ currentClass:AnyClass) -> [AnyObject]{
+    fileprivate class func dcObjectArrayWithKeyValuesArray(_ array:[Any] , _ currentClass:AnyClass) -> [AnyObject]{
         var temp = Array<AnyObject>()
         let properties = self.getProperties(typeClass: currentClass)
         for item in array{
-            let keyValues = item as? NSDictionary
+            let keyValues = item as? [String:Any]
             if (keyValues != nil){
                 let model = self.init()
                 //为每个model赋值
@@ -49,7 +49,7 @@ extension NSObject {
     }
     
     
-    func setValuesForProperties(_ properties:[DCProperty]?,keyValues:NSDictionary){
+    func setValuesForProperties(_ properties:[DCProperty]?,keyValues:[String:Any]){
         guard let _ = properties else{
             return
         }
@@ -57,35 +57,35 @@ extension NSObject {
         
         for property in properties!{
             if property.dcPropertyType.isCustomClass {
-                let value = keyValues[property.key]
-                let subClass = property.dcPropertyType.typeClass?.dcObjectWithKeyValues(value as! NSDictionary)
+                let value = keyValues[property.key as String]
+                let subClass = (property.dcPropertyType.typeClass as! NSObject.Type).dcObjectWithKeyValues(value as! [String:Any])
                 self.setValue(subClass, forKey: property.dcPropertyName as String)
             }else {
                 if property.dcPropertyType.isArray {
-                    let value = keyValues[property.key]
+                    let value = keyValues[property.key as String]
                     let tempValue  = value as! [Any]
                     if !dcIsDict(things: tempValue) {
                         self.setValue(tempValue, forKey: property.dcPropertyName as String)
                     }else {
                         let type = dcGetBundleName() + "." + dcFristCapitalized(str: property.key as String)
-                        let temp = NSClassFromString(type)?.dcObjectArrayWithKeyValuesArray(value as! NSArray)
+                        let temp = (NSClassFromString(type) as! NSObject.Type).dcObjectArrayWithKeyValuesArray(value as! [Any])
                         self.setValue(temp, forKey: property.dcPropertyName as String)
                     }
                 }else{
                     //var value:Any!
-                    if (keyValues[property.key] as? String) == nil && property.dcPropertyType.code == DCSwiftExtensionType.NSString.rawValue {
+                    if (keyValues[property.key as String] as? String) == nil && property.dcPropertyType.code as String == DCSwiftExtensionType.NSString.rawValue {
                         let value = ""
                         self.setValue(value, forKey: property.dcPropertyName as String)
-                    }else if (keyValues[property.key] as? String) != nil && property.dcPropertyType.code == DCSwiftExtensionType.NSString.rawValue {
-                        let value = keyValues[property.key]
+                    }else if (keyValues[property.key as String] as? String) != nil && property.dcPropertyType.code as String == DCSwiftExtensionType.NSString.rawValue {
+                        let value = keyValues[property.key as String]
                         self.setValue(value, forKey: property.dcPropertyName as String)
                     }
                     
-                    if (keyValues[property.key] as? NSNumber) == nil && property.dcPropertyType.code == DCSwiftExtensionType.NSNumber.rawValue {
+                    if (keyValues[property.key as String] as? NSNumber) == nil && property.dcPropertyType.code as String == DCSwiftExtensionType.NSNumber.rawValue {
                         let value = 0
                         self.setValue(value, forKey: property.dcPropertyName as String)
-                    }else if (keyValues[property.key] as? NSNumber) != nil && property.dcPropertyType.code == DCSwiftExtensionType.NSNumber.rawValue {
-                        let value = keyValues[property.key]
+                    }else if (keyValues[property.key as String] as? NSNumber) != nil && property.dcPropertyType.code as String == DCSwiftExtensionType.NSNumber.rawValue {
+                        let value = keyValues[property.key as String]
                         self.setValue(value, forKey: property.dcPropertyName as String)
                     }
                 }
@@ -141,7 +141,7 @@ extension NSObject {
             self.dcProperty = dcProperty
             self.dcPropertyName = NSString(cString: property_getName(dcProperty), encoding: String.Encoding.utf8.rawValue)
             key = self.dcPropertyName as NSString
-            var  code: NSString = NSString(cString: property_getAttributes(dcProperty), encoding: String.Encoding.utf8.rawValue)!
+            var  code: NSString = NSString(cString:property_getAttributes(dcProperty)!, encoding: String.Encoding.utf8.rawValue)!
             if code.contains(","){
                 code = dcRemoveNumber(str: code as String) as NSString
                 let arr = code.components(separatedBy: ",")
@@ -149,27 +149,27 @@ extension NSObject {
                 
                 
                 if firstStr == "Tq" || firstStr == "TB"{
-                    code = DCSwiftExtensionType.NSNumber.rawValue
+                    code = DCSwiftExtensionType.NSNumber.rawValue as NSString
                 }else if (firstStr == "T@\"NSNumber\"") {
-                    code = DCSwiftExtensionType.NSNumber.rawValue
+                    code = DCSwiftExtensionType.NSNumber.rawValue as NSString
                 }else if (firstStr == "T@\"NSString\"") {
-                    code = DCSwiftExtensionType.NSString.rawValue
+                    code = DCSwiftExtensionType.NSString.rawValue as NSString
                 }else if (firstStr == "T@\"NSArray\"") {
-                    code = DCSwiftExtensionType.NSArray.rawValue
+                    code = DCSwiftExtensionType.NSArray.rawValue as NSString
                 }else if  code.contains(dcGetBundleName()){
                     let arr = firstStr.components(separatedBy: dcGetBundleName())
                     var firstStr:String = arr[1]
-                    firstStr = String(firstStr.characters.filter { $0 != "\"" })
+                    firstStr = String(firstStr.filter { $0 != "\"" })
                     code = firstStr as NSString
                 }
-                self.dcPropertyType = DCType(code)
+                self.dcPropertyType = DCType(code as String)
             }
         }
     }
     
     class DCType {
         //类名字
-        var code:NSString
+        var code:String
         //类的类型
         var typeClass:AnyClass?
         //数组里面放置的类型
@@ -178,12 +178,16 @@ extension NSObject {
         var isCustomClass:Bool = false
         //是否是数组
         var isArray:Bool = false
-        init(_ code:NSString){
+        init(_ code:String){
             self.code = code
             
             if  self.code.hasPrefix("NS") {
-                self.typeClass = NSClassFromString(self.code as String)
-                if self.code == DCSwiftExtensionType.NSArray.rawValue {
+                guard let nameSpage = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String else {
+                    print("没有命名空间")
+                    return
+                }
+                self.typeClass = NSClassFromString(nameSpage+"."+self.code)
+                if self.code as String == DCSwiftExtensionType.NSArray.rawValue {
                     isArray = true
                 }
             }else {
@@ -212,7 +216,7 @@ fileprivate func dcGetClassWitnClassName(_ name:String) ->AnyClass?{
 fileprivate func dcRemoveNumber(str:String) -> String {
     //在去掉剩下的数字
     var noNumber:String = ""
-    for char in (str as String).characters{
+    for char in str {
         if char > "9" || char < "0"{
             noNumber += String(char)
         }
@@ -224,7 +228,7 @@ fileprivate func dcRemoveNumber(str:String) -> String {
 fileprivate func dcFristCapitalized(str:String) -> String {
     var noNumber:String = ""
     var i = 0
-    for char in (str as String).characters{
+    for char in str{
         if i == 0 {
             let str = String(char).uppercased()
             noNumber = str

@@ -2,45 +2,50 @@
 //  GIFTextHeader.swift
 //  SwiftPullToRefresh
 //
-//  Created by Leo Zhou on 2017/4/30.
-//  Copyright © 2017年 Leo Zhou. All rights reserved.
+//  Created by Leo Zhou on 2017/12/21.
+//  Copyright © 2017年 Wiredcraft. All rights reserved.
 //
 
 import UIKit
 
-final class GIFTextHeader: RefreshView {
-    private let gifItem: GIFItem
+class GIFTextHeader: GIFHeader {
 
-    private let textItem: TextItem
+    private let refreshText: RefreshText
 
-    init(data: Data, textItem: TextItem, height: CGFloat, action: @escaping () -> Void) {
-        self.gifItem = GIFItem(data: data, isBig: false, height: height)
-        self.textItem = textItem
-        super.init(height: height, action: action)
+    private lazy var label: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = UIColor.black.withAlphaComponent(0.8)
+        return label
+    }()
 
-        addSubview(gifItem.imageView)
-        addSubview(textItem.label)
+    init(data: Data, refreshText: RefreshText, height: CGFloat, action: @escaping () -> Void) {
+        self.refreshText = refreshText
+        super.init(data: data, isBig: false, height: height, action: action)
+        addSubview(label)
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("SwiftPullToRefresh: init(coder:) has not been implemented")
-    }
-
-    override func didUpdateState(_ isRefreshing: Bool) {
-        gifItem.didUpdateState(isRefreshing)
-        textItem.didUpdateState(isRefreshing)
-    }
-
-    override func didUpdateProgress(_ progress: CGFloat) {
-        gifItem.didUpdateProgress(progress)
-        textItem.didUpdateProgress(progress)
+        fatalError("init(coder:) has not been implemented")
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
-
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
-        gifItem.imageView.center = center.moveLeft(x: textItem.label.bounds.midX + 4)
-        textItem.label.center = center.moveRight(x: gifItem.imageView.bounds.midX + 4)
+        imageView.center = center.move(x: -label.bounds.midX - 4)
+        label.center = center.move(x: imageView.bounds.midX + 4)
     }
+
+    override func didUpdateState(_ isRefreshing: Bool) {
+        super.didUpdateState(isRefreshing)
+        label.text = isRefreshing ? refreshText.loadingText : refreshText.pullingText
+        label.sizeToFit()
+    }
+
+    override func didUpdateProgress(_ progress: CGFloat) {
+        super.didUpdateProgress(progress)
+        label.text = progress == 1 ? refreshText.releaseText : refreshText.pullingText
+        label.sizeToFit()
+    }
+
 }

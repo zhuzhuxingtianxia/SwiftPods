@@ -1,57 +1,79 @@
 PODS:
-  - Alamofire (4.5.0)
-  - Charts (3.0.2):
-    - Charts/Core (= 3.0.2)
-  - Charts/Core (3.0.2)
-  - ESPullToRefresh (2.6)
-  - HandyJSON (1.7.2)
-  - Kingfisher (3.10.2)
-  - PKHUD (4.2.3)
-  - Realm (2.8.3):
-    - Realm/Headers (= 2.8.3)
-  - Realm/Headers (2.8.3)
-  - RealmSwift (2.8.3):
-    - Realm (= 2.8.3)
-  - RxSwift (3.5.0)
+  - Alamofire (4.8.1)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - ESPullToRefresh (2.7)
+  - HandyJSON (4.2.1)
+  - Kingfisher (4.10.1)
+  - NVActivityIndicatorView (4.4.1):
+    - NVActivityIndicatorView/Presenter (= 4.4.1)
+  - NVActivityIndicatorView/Presenter (4.4.1)
+  - PKHUD (5.2.1)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - SKPhotoBrowser (4.0.1)
-  - SnapKit (3.2.0)
-  - SwiftPullToRefresh (1.1.0)
-  - SwiftyJSON (3.1.4)
+  - SKPhotoBrowser (6.0.0)
+  - SnapKit (4.2.0)
+  - SwiftPullToRefresh (3.0.1)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.5.0)
-  - Charts (~> 3.0.2)
-  - ESPullToRefresh (~> 2.6.0)
-  - HandyJSON (~> 1.7.2)
-  - Kingfisher (~> 3.10.2)
-  - PKHUD (~> 4.0)
-  - RealmSwift (~> 2.8.3)
-  - RxSwift (~> 3.5.0)
+  - Alamofire (~> 4.8.0)
+  - Charts (~> 3.2.0)
+  - ESPullToRefresh (~> 2.7)
+  - HandyJSON (~> 4.2.0)
+  - Kingfisher (~> 4.0)
+  - NVActivityIndicatorView (~> 4.4.0)
+  - PKHUD (~> 5.0)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - SDWebImage (~> 3.8)
-  - SKPhotoBrowser (~> 4.0.1)
-  - SnapKit (~> 3.2.0)
-  - SwiftPullToRefresh (~> 1.1.0)
-  - SwiftyJSON (~> 3.1.4)
+  - SKPhotoBrowser (~> 6.0.0)
+  - SnapKit (~> 4.2.0)
+  - SwiftPullToRefresh (~> 3.0.0)
+  - SwiftyJSON (~> 4.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Charts
+    - ESPullToRefresh
+    - HandyJSON
+    - Kingfisher
+    - NVActivityIndicatorView
+    - PKHUD
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - SDWebImage
+    - SKPhotoBrowser
+    - SnapKit
+    - SwiftPullToRefresh
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
-  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
-  ESPullToRefresh: 85f4990acf87f78c6a1466bbbee7a75d7de24db9
-  HandyJSON: e7ad0483005826baba1d1c251cd98d0aa8bd8cce
-  Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
-  PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
-  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
-  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
-  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+  HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
+  PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SKPhotoBrowser: 3a7c6fc02aa1620ab17253a47a49fafda46536e8
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
-  SwiftPullToRefresh: 11ffa1b9d886b2902bed64b05bd50e1e0f1201f1
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SKPhotoBrowser: 76eb862685761707b5745fde7762757966565e07
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftPullToRefresh: 7949588ace920cc6898b57799d7f5cd5db9ea9a3
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 35109c7b389077784942d992c15964daf2e29e02
+PODFILE CHECKSUM: 9d7832a27264c5acd7d4eb9e4bec962a3dc66472
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.2

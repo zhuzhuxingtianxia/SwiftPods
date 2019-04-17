@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '22BE7B03C6343E1BAAC8F1D80D8F280F'
-               BlueprintName = 'SKPhotoBrowser'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SKPhotoBrowser.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "24C9AE027EE631E70909AE09217F20C1"
+               BlueprintName = "SKPhotoBrowser"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "SKPhotoBrowser.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

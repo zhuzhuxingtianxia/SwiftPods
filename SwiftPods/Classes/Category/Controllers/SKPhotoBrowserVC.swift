@@ -74,7 +74,7 @@ class SKPhotoBrowserVC: UIViewController {
                 HUD.hide(animated: true)
                 
                 let result = jsonData["data"]
-                self?.dataArray = SKPhotoBrowserModel.dcObjectArrayWithKeyValuesArray(result as! NSArray) as? Array<SKPhotoBrowserModel>
+                self?.dataArray = SKPhotoBrowserModel.dcObjectArrayWithKeyValuesArray((result as! NSArray) as! [Any]) as? Array<SKPhotoBrowserModel>
                 
                 self?.images = self?.dataArray?.map{ value in
                     

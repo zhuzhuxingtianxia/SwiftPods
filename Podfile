@@ -15,12 +15,27 @@ target 'SwiftPods' do
 
   #类似SDWebImage 还有AlamofireImage
   pod 'Kingfisher', '~> 4.0'
-
+  
   #数据库
 #  pod 'RealmSwift', '~> 3.13.1'
+
   #图片预览 依赖SDWebImage
   pod 'SKPhotoBrowser', '~> 6.0.0'
   pod 'SDWebImage', '~>3.8'
+  
+  #banner滚动图片
+#  pod 'FSPagerView','~> 0.8.2'
+  #tabpage分页
+#  pod 'DNSPageView', '~> 1.1.6'
+  #跑马灯
+#  pod 'JXMarqueeView', '~> 0.0.7'
+  #滚动页
+#  pod 'LTScrollView', '~> 0.2.1'
+  #播放网络音频
+#  pod 'StreamingKit', '~> 0.1.30'
+  #消息弹框
+#  pod 'SwiftMessages', '~> 6.0.2'
+
   #下拉刷新
   pod 'SwiftPullToRefresh', '~> 3.0.0'
   pod 'ESPullToRefresh', '~> 2.7'
@@ -35,6 +50,9 @@ target 'SwiftPods' do
   #响应式
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
+  # RxSwift对tableView的扩展
+  pod 'RxDataSources', '~> 3.1.0'
+  
   #图表库
   pod 'Charts', '~> 3.2.0'
 

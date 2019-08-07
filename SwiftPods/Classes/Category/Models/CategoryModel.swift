@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Codable扩展类型不匹配：https://www.jianshu.com/p/f4b3dce8bd6f
  //使用struct方式
  struct CategoryModel: Codable {
  public var title:String?
@@ -42,3 +43,4 @@ class CategoryModel: NSObject {
     
 }
 */
+

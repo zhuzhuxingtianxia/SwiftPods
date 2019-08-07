@@ -41,6 +41,7 @@
 		B690BA601F31676D0011FD8B /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B690BA5F1F31676D0011FD8B /* image0.jpg */; };
 		B69716931F663EF70008D71F /* SnapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69716921F663EF70008D71F /* SnapController.swift */; };
 		B69716951F665AEF0008D71F /* HandyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69716941F665AEF0008D71F /* HandyModel.swift */; };
+		B69F132F22FA81EF003338C4 /* CodableProtcol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F132E22FA81EE003338C4 /* CodableProtcol.swift */; };
 		B6B1EE6E1F0B31B900D2658F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6C1F0B31B900D2658F /* Main.storyboard */; };
 		B6B1EE701F0B31B900D2658F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6F1F0B31B900D2658F /* Assets.xcassets */; };
 		B6B1EE731F0B31B900D2658F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE711F0B31B900D2658F /* LaunchScreen.storyboard */; };
@@ -160,6 +161,7 @@
 		B690BA5F1F31676D0011FD8B /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
 		B69716921F663EF70008D71F /* SnapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapController.swift; sourceTree = "<group>"; };
 		B69716941F665AEF0008D71F /* HandyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandyModel.swift; sourceTree = "<group>"; };
+		B69F132E22FA81EE003338C4 /* CodableProtcol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableProtcol.swift; sourceTree = "<group>"; };
 		B6B1EE651F0B31B900D2658F /* SwiftPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B1EE6D1F0B31B900D2658F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6B1EE6F1F0B31B900D2658F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -648,6 +650,7 @@
 			isa = PBXGroup;
 			children = (
 				B621E5E41F0CD3D200209CD6 /* CategoryModel.swift */,
+				B69F132E22FA81EE003338C4 /* CodableProtcol.swift */,
 				B690BA551F302E5D0011FD8B /* SKPhotoBrowserModel.swift */,
 				B69716941F665AEF0008D71F /* HandyModel.swift */,
 			);
@@ -1203,6 +1206,7 @@
 				B6B1EF031F0B841D00D2658F /* FindController.swift in Sources */,
 				B6B1EEEF1F0B790E00D2658F /* MyController.swift in Sources */,
 				B606393C1F14CD22003A3C78 /* Reflect+Other.swift in Sources */,
+				B69F132F22FA81EF003338C4 /* CodableProtcol.swift in Sources */,
 				B690BA541F2B489C0011FD8B /* SKCollectionCell.swift in Sources */,
 				B68032471F25E9A8009D0F50 /* Const.swift in Sources */,
 				B68032DB1F2714B7009D0F50 /* RealmSwiftVC.swift in Sources */,

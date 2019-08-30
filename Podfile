@@ -12,6 +12,8 @@ target 'SwiftPods' do
   pod 'SwiftyJSON', '~> 4.2.0'
   pod 'HandyJSON', '~> 4.2.0'
 #  pod 'ObjectMapper', '~> 3.4.2'
+# MJ的纯swift解析框架，Xcode11开始支持
+#  pod 'KakaJSON', '~> 1.0.0'
 
   #类似SDWebImage 还有AlamofireImage
   pod 'Kingfisher', '~> 4.0'

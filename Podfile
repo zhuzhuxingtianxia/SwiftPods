@@ -1,5 +1,5 @@
 project 'SwiftPods.xcodeproj'
-# pod install --verbose --no-repo-update
+
 # Uncomment the next line to define a global platform for your project
  platform :ios, '9.0'
 
@@ -57,7 +57,7 @@ target 'SwiftPods' do
   
   #图表库
   pod 'Charts', '~> 3.2.0'
-  
+
   # Pods for SwiftPods
 
   target 'SwiftPodsTests' do

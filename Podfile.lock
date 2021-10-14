@@ -3,7 +3,6 @@ PODS:
   - Charts (3.2.1):
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
-  - Differentiator (3.1.0)
   - ESPullToRefresh (2.7)
   - HandyJSON (4.2.1)
   - Kingfisher (4.10.1)
@@ -13,10 +12,6 @@ PODS:
   - PKHUD (5.2.1)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
-    - RxSwift (~> 4.0)
-  - RxDataSources (3.1.0):
-    - Differentiator (~> 3.0)
-    - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
@@ -37,7 +32,6 @@ DEPENDENCIES:
   - NVActivityIndicatorView (~> 4.4.0)
   - PKHUD (~> 5.0)
   - RxCocoa (~> 4.0)
-  - RxDataSources (~> 3.1.0)
   - RxSwift (~> 4.0)
   - SDWebImage (~> 3.8)
   - SKPhotoBrowser (~> 6.0.0)
@@ -46,7 +40,7 @@ DEPENDENCIES:
   - SwiftyJSON (~> 4.2.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Charts
     - ESPullToRefresh
@@ -62,14 +56,10 @@ SPEC REPOS:
     - SnapKit
     - SwiftPullToRefresh
     - SwiftyJSON
-  trunk:
-    - Differentiator
-    - RxDataSources
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
-  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
   HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
@@ -77,7 +67,6 @@ SPEC CHECKSUMS:
   PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
-  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SKPhotoBrowser: 76eb862685761707b5745fde7762757966565e07
@@ -85,6 +74,6 @@ SPEC CHECKSUMS:
   SwiftPullToRefresh: 7949588ace920cc6898b57799d7f5cd5db9ea9a3
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 5f5dc54b1f4e578016c68842203ecbac2818f18e
+PODFILE CHECKSUM: 9d7832a27264c5acd7d4eb9e4bec962a3dc66472
 
-COCOAPODS: 1.11.0
+COCOAPODS: 1.5.2

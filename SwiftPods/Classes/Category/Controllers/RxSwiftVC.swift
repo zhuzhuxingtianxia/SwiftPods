@@ -53,20 +53,20 @@ class RxSwiftVC: UIViewController {
         
         usernameValid
             .bind(to: passwordOutlet.rx.isEnabled)
-            .disposed(by: rx.disposeBag)
+            .disposed(by: disposeBag)
         usernameValid
             .bind(to: usernameValidOutlet.rx.isHidden)
-            .disposed(by: rx.disposeBag)
+            .disposed(by: disposeBag)
         passwordValid
             .bind(to: passwordValidOutlet.rx.isHidden)
-            .disposed(by: rx.disposeBag)
+            .disposed(by: disposeBag)
         everythingValid
             .bind(to: doSomethingOutlet.rx.isEnabled)
-            .disposed(by: rx.disposeBag)
+            .disposed(by: disposeBag)
         
         doSomethingOutlet.rx.tap
             .subscribe({ [weak self] _ in  self?.showAlert() })
-            .disposed(by: rx.disposeBag)
+            .disposed(by: disposeBag)
         
         example()
     }
@@ -99,7 +99,7 @@ class RxSwiftVC: UIViewController {
             .subscribe(onNext: {
                 print("您输入的是：\($0)")
             })
-            .disposed(by: rx.disposeBag)
+            .disposed(by: disposeBag)
         
     }
     

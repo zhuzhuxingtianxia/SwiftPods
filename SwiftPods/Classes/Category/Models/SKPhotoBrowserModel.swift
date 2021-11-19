@@ -33,25 +33,30 @@ class SKPhotoBrowserModel: NSObject {
         let param:[String:Any] = ["json_msg":jsonParm]
         
         //设置无效证书访问
-        let manager = SessionManager.default
-        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
-        
-        Alamofire.request(baseUrl, method: HTTPMethod.post, parameters: param, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
-            guard response.error == nil else {
-                print(response.error.debugDescription)
-                return
-            }
-            
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                //print(utf8Text.debugDescription)
-                guard let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else {
-                    completionHandler([:])
-                    return
+//        let manager = Session.default
+//
+//    manager.attemptCredentialAuthentication
+//        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
+//    
+        AF.request(baseUrl, method: HTTPMethod.post, parameters: param, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
+            print(response)
+            switch response.result {
+            case .success(let json):
+                if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                    //print(utf8Text.debugDescription)
+                    guard let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else {
+                        completionHandler([:])
+                        return
+                    }
+                    
+                    completionHandler(json as! Dictionary<String, Any>)
+                    
                 }
                 
-                completionHandler(json as! Dictionary<String, Any>)
-                
+            case .failure(let error):
+                print("\(error)")
             }
+            
             
         }
     }

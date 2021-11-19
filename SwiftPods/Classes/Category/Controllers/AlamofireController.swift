@@ -69,10 +69,9 @@ class AlamofireController: UIViewController {
         let param:[String:Any] = ["json_msg":jsonParm]
         
         //设置无效证书访问
-        let manager = SessionManager.default
-        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
-        
-        Alamofire.request(url, method: HTTPMethod.post, parameters: param, encoding: URLEncoding.default, headers: nil).response { (response) in
+//        let manager = SessionManager.default
+//        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
+        AF.request(url, method: HTTPMethod.post, parameters: param, encoding: URLEncoding.default, headers: nil).response { (response) in
             guard response.error == nil else {
                 print(response.error.debugDescription)
                 return
@@ -93,17 +92,17 @@ class AlamofireController: UIViewController {
         
         if allow {
             //设置无效证书访问
-            let manager = SessionManager.default
-            manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
+//            let manager = SessionManager.default
+//            manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
         }
         
-        Alamofire.request(url, method: HTTPMethod.post, parameters: param).responseJSON { (response) in
+        AF.request(url, method: HTTPMethod.post, parameters: param).responseJSON { (response) in
             
-            if let json = response.result.value {
+            if let json: Any = response.result as Any {
                 print("JSON: \(json)")
             }
-            guard response.result.isSuccess == true else {
-                print(response.result.debugDescription)
+            guard (response.value != nil) == true else {
+                print(response.result)
                 return
             }
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
@@ -120,10 +119,10 @@ class AlamofireController: UIViewController {
         let param:[String:Any] = ["json_msg":jsonParm]
         
         //设置无效证书访问
-        let manager = SessionManager.default
-        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
+//        let manager = SessionManager.default
+//        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
         
-        Alamofire.request(url, method: HTTPMethod.post, parameters: param, encoding: URLEncoding.default, headers: nil).responseString { (response) in
+        AF.request(url, method: HTTPMethod.post, parameters: param, encoding: URLEncoding.default, headers: nil).responseString { (response) in
             
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                 print("Data3: \(utf8Text)")
@@ -139,10 +138,10 @@ class AlamofireController: UIViewController {
         let param:[String:Any] = ["json_msg":jsonParm]
         
         //设置无效证书访问
-        let manager = SessionManager.default
-        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
+//        let manager = SessionManager.default
+//        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
         
-        Alamofire.request(url, method: HTTPMethod.post, parameters: param, encoding: URLEncoding.default, headers: nil).responseData { (response) in
+        AF.request(url, method: HTTPMethod.post, parameters: param, encoding: URLEncoding.default, headers: nil).responseData { (response) in
             
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                 print("Data4: \(utf8Text)")
@@ -173,9 +172,38 @@ class AlamofireController: UIViewController {
         let param:[String:String] = ["json_msg":jsonParm]
         
         //设置无效证书访问
-        let manager = SessionManager.default
-        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
+//        let manager = SessionManager.default
+//        manager.delegate.sessionDidReceiveChallenge = { session,challenge in return (URLSession.AuthChallengeDisposition.useCredential,URLCredential(trust:challenge.protectionSpace.serverTrust!)) }
+        AF.upload(multipartFormData: { (multipartFormData) in
+            if let _image = image {
+                if let imageData = _image.jpegData(compressionQuality: 0.3) {
+                    //let path = self.getCachesPath()
+                   // multipartFormData.append(imageData, withName: "file")
+                    multipartFormData.append(imageData, withName: "file", fileName: "\(NSDate.init())" + ".png", mimeType: "image/png")
+
+                }
+            }
+            
+            for (key, value) in param {
+               
+                multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
+               
+            }
+        }, to: url).uploadProgress { (progress) in
+            print("Upload Progress: \(progress.fractionCompleted)")
+        }.responseJSON { (response) in
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Upload: \(utf8Text)")
+                let jsonData = JSON.init(parseJSON: utf8Text)
+                if jsonData["status"] == 200 {
+                    print("成功")
+                }else{
+                    print(jsonData["message"])
+                }
+            }
+        }
         
+        /*
         Alamofire.upload(multipartFormData: { (multipartFormData) in
             
             if let _image = image {
@@ -219,6 +247,7 @@ class AlamofireController: UIViewController {
             }
             
         }
+        */
     }
 
     

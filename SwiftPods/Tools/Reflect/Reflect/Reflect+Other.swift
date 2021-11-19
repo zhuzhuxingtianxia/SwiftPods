@@ -45,7 +45,7 @@ extension String{
     func explode (separator: Character) -> [String] {
         
         
-        return self.characters.split(whereSeparator: { (element) -> Bool in
+        return self.split(whereSeparator: { (element) -> Bool in
 
             return element == separator
         }).map { String($0) }

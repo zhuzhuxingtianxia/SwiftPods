@@ -14,7 +14,7 @@ func ClassFromString(str: String) -> AnyClass!{
 
     if  var appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String {
         
-        if appName == "" {appName = ((Bundle.main.bundleIdentifier!).characters.split{$0 == "."}.map { String($0) }).last ?? ""}
+        if appName == "" {appName = ((Bundle.main.bundleIdentifier!).split{$0 == "."}.map { String($0) }).last ?? ""}
         
         var clsStr = str
         
@@ -34,7 +34,7 @@ func ClassFromString(str: String) -> AnyClass!{
             
             for (_, s): (Int, String) in strArr.enumerated(){
                 
-                nameStringM += "\(s.characters.count)\(s)"
+                nameStringM += "\(s.count)\(s)"
             }
             
             className = nameStringM

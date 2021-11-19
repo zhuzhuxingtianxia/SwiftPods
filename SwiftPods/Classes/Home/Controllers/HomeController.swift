@@ -15,6 +15,7 @@ class HomeController: BaseViewController {
         // Do any additional setup after loading the view.
         self.navigationItem.title = "首页"
         view.backgroundColor = UIColor.white
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34FBFB4EC68720913D3AE47F /* Pods_SwiftPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7203383BF98067629E6CCEAA /* Pods_SwiftPods.framework */; };
 		7B7B1E0E35358C2EA77DFFBA /* Pods_SwiftPodsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3878081DA8E17621166F5B21 /* Pods_SwiftPodsUITests.framework */; };
 		B60638E61F147E7A003A3C78 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B642A4F91F0E35E6005F1712 /* Localizable.strings */; };
 		B606392A1F1481CE003A3C78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B642A4F41F0E35DB005F1712 /* InfoPlist.strings */; };
@@ -68,6 +67,7 @@
 		B6B1EF0B1F0B95D800D2658F /* ShopCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EF0A1F0B95D800D2658F /* ShopCart.storyboard */; };
 		B6B1EF0D1F0B95EA00D2658F /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EF0C1F0B95E900D2658F /* My.storyboard */; };
 		B6B1EF0F1F0B97F200D2658F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EF0E1F0B97F200D2658F /* Home.storyboard */; };
+		B6DA18892719A3B000BC4B01 /* Pods_SwiftPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7203383BF98067629E6CCEAA /* Pods_SwiftPods.framework */; };
 		BD648BB9726F0D5C4392B5D7 /* Pods_SpeakEnglishUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADF625BF35B74F81F665B5E /* Pods_SpeakEnglishUITests.framework */; };
 		C3B41F72C76C7012C1FF8302 /* Pods_SpeakEnglishTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8BBD6DF13448CDEC902F10 /* Pods_SpeakEnglishTests.framework */; };
 		D676D7AEA0D5DD969CFEC152 /* Pods_SwiftPodsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E055831BD2BE1B68172FF080 /* Pods_SwiftPodsTests.framework */; };
@@ -212,7 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34FBFB4EC68720913D3AE47F /* Pods_SwiftPods.framework in Frameworks */,
+				B6DA18892719A3B000BC4B01 /* Pods_SwiftPods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -916,6 +916,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -1021,7 +1022,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SpeakEnglish/Pods-SpeakEnglish-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SpeakEnglish/Pods-SpeakEnglish-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -1034,7 +1035,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeakEnglish/Pods-SpeakEnglish-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeakEnglish/Pods-SpeakEnglish-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1B9D2EF73355656C7E2FB19E /* [CP] Check Pods Manifest.lock */ = {
@@ -1115,7 +1116,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftPods/Pods-SwiftPods-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPods/Pods-SwiftPods-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
@@ -1123,10 +1124,9 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftPullToRefresh/SwiftPullToRefresh.framework",
@@ -1141,10 +1141,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftPullToRefresh.framework",
@@ -1152,7 +1151,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftPods/Pods-SwiftPods-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftPods/Pods-SwiftPods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD9D8F5F28E7D4C6669D4827 /* [CP] Check Pods Manifest.lock */ = {
@@ -1471,12 +1470,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftPods/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SwiftPods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ENABLE_BATCH_MODE = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1486,12 +1485,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftPods/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SwiftPods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ENABLE_BATCH_MODE = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1505,7 +1504,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SwiftPodsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftPods.app/SwiftPods";
 			};
 			name = Debug;
@@ -1520,7 +1519,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SwiftPodsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftPods.app/SwiftPods";
 			};
 			name = Release;
@@ -1534,7 +1533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SwiftPodsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SwiftPods;
 			};
 			name = Debug;
@@ -1548,7 +1547,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SwiftPodsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SwiftPods;
 			};
 			name = Release;
@@ -1563,7 +1562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SpeakEnglish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1577,7 +1576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SpeakEnglish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1591,7 +1590,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SpeakEnglishTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeakEnglish.app/SpeakEnglish";
 			};
 			name = Debug;
@@ -1606,7 +1605,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SpeakEnglishTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeakEnglish.app/SpeakEnglish";
 			};
 			name = Release;
@@ -1620,7 +1619,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SpeakEnglishUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SpeakEnglish;
 			};
 			name = Debug;
@@ -1634,7 +1633,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.SpeakEnglishUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SpeakEnglish;
 			};
 			name = Release;

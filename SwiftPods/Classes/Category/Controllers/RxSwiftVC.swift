@@ -22,8 +22,6 @@ class RxSwiftVC: UIViewController {
     
     @IBOutlet weak var doSomethingOutlet: UIButton!
     
-    let disposeBag = DisposeBag()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -55,20 +53,20 @@ class RxSwiftVC: UIViewController {
         
         usernameValid
             .bind(to: passwordOutlet.rx.isEnabled)
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         usernameValid
             .bind(to: usernameValidOutlet.rx.isHidden)
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         passwordValid
             .bind(to: passwordValidOutlet.rx.isHidden)
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         everythingValid
             .bind(to: doSomethingOutlet.rx.isEnabled)
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         
         doSomethingOutlet.rx.tap
             .subscribe({ [weak self] _ in  self?.showAlert() })
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         
         example()
     }
@@ -101,7 +99,7 @@ class RxSwiftVC: UIViewController {
             .subscribe(onNext: {
                 print("您输入的是：\($0)")
             })
-            .disposed(by: disposeBag)
+            .disposed(by: rx.disposeBag)
         
     }
     
@@ -128,3 +126,26 @@ class RxSwiftVC: UIViewController {
     */
 
 }
+
+extension Reactive where Base:UILabel {
+    public var fontSize:Binder<CGFloat> {
+        return Binder(self.base) { (label, fontSize) in
+            label.font = UIFont.systemFont(ofSize: fontSize)
+        }
+    }
+}
+
+extension NSObject {
+    public var disposeBag:DisposeBag {
+        let disposeBag: DisposeBag
+        if let value = objc_getAssociatedObject(self, &kDisposeBagKey) as? DisposeBag {
+            disposeBag = value
+        }else {
+            disposeBag = DisposeBag()
+            objc_setAssociatedObject(self, &kDisposeBagKey, disposeBag, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+        return disposeBag
+    }
+}
+
+private var kDisposeBagKey:UInt8 = 0

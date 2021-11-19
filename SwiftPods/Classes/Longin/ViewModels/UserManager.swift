@@ -16,21 +16,35 @@ final class UserManager {
     
     static func allUsers(completion: @escaping ([User]) -> ()) {
         let url = "\(usersBaseURL)"
-        Alamofire.request(url).responseJSON { response in
-            if let jsons = response.result.value as? [[String: Any]] {
-                let users = Users.dcObjectArrayWithKeyValuesArray((jsons as NSArray) as! [Any])
-                completion(users as! [User])
+        AF.request(url).responseJSON { response in
+            switch response.result {
+            case .success(let json):
+                if let jsons = json as? [[String: Any]] {
+                    let users = Users.dcObjectArrayWithKeyValuesArray((jsons as NSArray) as! [Any])
+                    completion(users as! [User])
+                }
+            case .failure(let error):
+                print("Request failed with error: \(error)")
             }
+            
+            
         }
     }
     
     static func user(id: Int, completion: @escaping (User) -> ()) {
         let url = "\(usersBaseURL)/\(id)"
-        Alamofire.request(url).responseJSON { response in
-            if let json = response.result.value as? [String: Any],
-                let user = User(json: json) {
-                completion(user)
+        AF.request(url).responseJSON { response in
+            switch response.result {
+            case .success(let json):
+                if let dict = json as? [String: Any]{
+                   if let user = User(json: dict) {
+                        completion(user)
+                    }
+                }
+            case .failure(_):
+                print("failure")
             }
+            
         }
     }
 }
@@ -52,10 +66,14 @@ protocol AbstractRequest {
 }
 extension AbstractRequest {
     func start(completion: @escaping (Any) -> Void) {
-        Alamofire.request(requestURL, method: self.method).responseJSON { response in
-            if let json = response.result.value {
+        AF.request(requestURL, method: self.method).responseJSON { response in
+            switch response.result {
+            case .success(let json):
                 completion(json)
+            case .failure(_):
+                print("failure")
             }
+
         }
     }
 }

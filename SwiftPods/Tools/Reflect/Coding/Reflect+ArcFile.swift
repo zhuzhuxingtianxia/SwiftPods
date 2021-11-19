@@ -26,7 +26,7 @@ extension Reflect{
         
         if obj != nil {
             
-            NSKeyedArchiver.archiveRootObject(obj, toFile: path)
+            NSKeyedArchiver.archiveRootObject(obj as Any, toFile: path)
             
         }else{
             

@@ -55,6 +55,10 @@ target 'SwiftPods' do
   # RxSwift对tableView的扩展
   # pod 'RxDataSources', '~> 3.1.0'
   
+  
+  # 网络管理库 桥接Alamofire与Rx框架
+  # pod 'Moya', '~> 15.0'
+  
   #图表库
   pod 'Charts', '~> 3.6.0'
 

@@ -37,6 +37,8 @@ target 'SwiftPods' do
 #  pod 'StreamingKit', '~> 0.1.30'
   #消息弹框
 #  pod 'SwiftMessages', '~> 6.0.2'
+  # 可动画的TabBarController
+# pod 'RAMAnimatedTabBarController'
 
   #下拉刷新
   pod 'SwiftPullToRefresh', '~> 3.0.0'
@@ -45,7 +47,8 @@ target 'SwiftPods' do
   pod 'PKHUD', '~> 5.0'
   #toast提示
   pod 'NVActivityIndicatorView', '~>  5.1.1'
-
+  pod 'Toast-Swift', '~> 5.0.1'
+  
   #布局库  其前身是 Masonry
   #学习参考：http://blog.csdn.net/jsd0915/article/details/77852822
   pod 'SnapKit', '~> 5.0.0'

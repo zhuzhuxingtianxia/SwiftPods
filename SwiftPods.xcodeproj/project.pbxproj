@@ -25,6 +25,7 @@
 		B62C19B21F171547000E9E60 /* LonginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B11F171547000E9E60 /* LonginController.swift */; };
 		B62C19B41F171570000E9E60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B31F171570000E9E60 /* User.swift */; };
 		B62C19B61F1715ED000E9E60 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B51F1715ED000E9E60 /* UserManager.swift */; };
+		B67483DB27B60372005FE1EE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67483DA27B60372005FE1EE /* Device.swift */; };
 		B68032471F25E9A8009D0F50 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032461F25E9A8009D0F50 /* Const.swift */; };
 		B68032CD1F25F68D009D0F50 /* demo-big.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68032CC1F25F68D009D0F50 /* demo-big.gif */; };
 		B68032CF1F25F69B009D0F50 /* demo-small.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68032CE1F25F69B009D0F50 /* demo-small.gif */; };
@@ -146,6 +147,7 @@
 		B642A4F51F0E35DE005F1712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B642A4F81F0E35E6005F1712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B642A4FA1F0E35E8005F1712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B67483DA27B60372005FE1EE /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		B68032461F25E9A8009D0F50 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		B68032CC1F25F68D009D0F50 /* demo-big.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-big.gif"; sourceTree = "<group>"; };
 		B68032CE1F25F69B009D0F50 /* demo-small.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "demo-small.gif"; sourceTree = "<group>"; };
@@ -412,6 +414,7 @@
 				B621E5E61F0CE9DD00209CD6 /* ZJExtensionSwift.swift */,
 				B68032461F25E9A8009D0F50 /* Const.swift */,
 				B68032D01F26E20B009D0F50 /* Common.swift */,
+				B67483DA27B60372005FE1EE /* Device.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1192,6 +1195,7 @@
 				B60639381F14CD22003A3C78 /* Reflect+ArcFile.swift in Sources */,
 				B621E5E51F0CD3D200209CD6 /* CategoryModel.swift in Sources */,
 				B606393D1F14CD22003A3C78 /* Reflect+Property.swift in Sources */,
+				B67483DB27B60372005FE1EE /* Device.swift in Sources */,
 				B62C19B61F1715ED000E9E60 /* UserManager.swift in Sources */,
 				B60639391F14CD22003A3C78 /* Reflect+Parse.swift in Sources */,
 				B6B1EE9F1F0B656700D2658F /* ZJNavigationController.swift in Sources */,

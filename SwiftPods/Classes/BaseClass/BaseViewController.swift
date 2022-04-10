@@ -12,7 +12,12 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if #available(iOS 11.0, *) {
+            UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
+        }else {
+            self.automaticallyAdjustsScrollViewInsets = false
+        }
+        
         // Do any additional setup after loading the view.
     }
 

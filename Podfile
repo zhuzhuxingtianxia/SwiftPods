@@ -1,3 +1,5 @@
+source "https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git"
+
 project 'SwiftPods.xcodeproj'
 
 # Uncomment the next line to define a global platform for your project
@@ -45,8 +47,10 @@ target 'SwiftPods' do
   pod 'ESPullToRefresh', '~> 2.9.3'
   #加载中 swift4.x
   pod 'PKHUD', '~> 5.0'
-  #toast提示
+  # 样式比较多
   pod 'NVActivityIndicatorView', '~>  5.1.1'
+  
+  #toast提示
   pod 'Toast-Swift', '~> 5.0.1'
   
   #布局库  其前身是 Masonry
@@ -63,7 +67,10 @@ target 'SwiftPods' do
   # pod 'Moya', '~> 15.0'
   
   #图表库
-  pod 'Charts', '~> 3.6.0'
+  pod 'Charts', '~> 4.0.0'
+  
+  # 日历 该组件存在一定问题，实际项目不可使用
+  pod 'CVCalendar', '~> 1.7.0'
 
   # 识别库要iOS13可用于学习 依赖GPUImage 引入报错太多不可用
   # pod 'GPUImage2', :podspec => './GPUImage2.podspec'

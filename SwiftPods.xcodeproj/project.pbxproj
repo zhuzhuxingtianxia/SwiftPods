@@ -25,6 +25,64 @@
 		B62C19B21F171547000E9E60 /* LonginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B11F171547000E9E60 /* LonginController.swift */; };
 		B62C19B41F171570000E9E60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B31F171570000E9E60 /* User.swift */; };
 		B62C19B61F1715ED000E9E60 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C19B51F1715ED000E9E60 /* UserManager.swift */; };
+		B640BD0D27F17B6800B9EBB5 /* XYMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCEC27F17B6700B9EBB5 /* XYMarkerView.swift */; };
+		B640BD0E27F17B6800B9EBB5 /* RadarMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCED27F17B6700B9EBB5 /* RadarMarkerView.swift */; };
+		B640BD0F27F17B6800B9EBB5 /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCEE27F17B6700B9EBB5 /* DemoBaseViewController.swift */; };
+		B640BD1027F17B6800B9EBB5 /* DemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCEF27F17B6700B9EBB5 /* DemoListViewController.swift */; };
+		B640BD1127F17B6800B9EBB5 /* IntAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCF127F17B6700B9EBB5 /* IntAxisValueFormatter.swift */; };
+		B640BD1227F17B6800B9EBB5 /* DayAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCF227F17B6700B9EBB5 /* DayAxisValueFormatter.swift */; };
+		B640BD1327F17B6800B9EBB5 /* DateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCF327F17B6700B9EBB5 /* DateValueFormatter.swift */; };
+		B640BD1427F17B6800B9EBB5 /* LargeValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCF427F17B6700B9EBB5 /* LargeValueFormatter.swift */; };
+		B640BD1527F17B6800B9EBB5 /* MultipleLinesChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCF627F17B6800B9EBB5 /* MultipleLinesChartViewController.swift */; };
+		B640BD1627F17B6800B9EBB5 /* MultipleBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCF727F17B6800B9EBB5 /* MultipleBarChartViewController.swift */; };
+		B640BD1727F17B6800B9EBB5 /* HalfPieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCF827F17B6800B9EBB5 /* HalfPieChartViewController.swift */; };
+		B640BD1827F17B6800B9EBB5 /* LineChartTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCF927F17B6800B9EBB5 /* LineChartTimeViewController.swift */; };
+		B640BD1927F17B6800B9EBB5 /* ColoredLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCFA27F17B6800B9EBB5 /* ColoredLineChartViewController.swift */; };
+		B640BD1A27F17B6800B9EBB5 /* LineChart2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCFB27F17B6800B9EBB5 /* LineChart2ViewController.swift */; };
+		B640BD1B27F17B6800B9EBB5 /* LineChart1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCFC27F17B6800B9EBB5 /* LineChart1ViewController.swift */; };
+		B640BD1C27F17B6800B9EBB5 /* NegativeStackedBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCFD27F17B6800B9EBB5 /* NegativeStackedBarChartViewController.swift */; };
+		B640BD1D27F17B6800B9EBB5 /* ScatterChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCFE27F17B6800B9EBB5 /* ScatterChartViewController.swift */; };
+		B640BD1E27F17B6800B9EBB5 /* StackedBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BCFF27F17B6800B9EBB5 /* StackedBarChartViewController.swift */; };
+		B640BD1F27F17B6800B9EBB5 /* BubbleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0027F17B6800B9EBB5 /* BubbleChartViewController.swift */; };
+		B640BD2027F17B6800B9EBB5 /* LineChartFilledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0127F17B6800B9EBB5 /* LineChartFilledViewController.swift */; };
+		B640BD2127F17B6800B9EBB5 /* PositiveNegativeBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0227F17B6800B9EBB5 /* PositiveNegativeBarChartViewController.swift */; };
+		B640BD2227F17B6800B9EBB5 /* AnotherBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0327F17B6800B9EBB5 /* AnotherBarChartViewController.swift */; };
+		B640BD2327F17B6800B9EBB5 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0427F17B6800B9EBB5 /* PieChartViewController.swift */; };
+		B640BD2427F17B6800B9EBB5 /* CubicLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0527F17B6800B9EBB5 /* CubicLineChartViewController.swift */; };
+		B640BD2527F17B6800B9EBB5 /* RadarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0627F17B6800B9EBB5 /* RadarChartViewController.swift */; };
+		B640BD2627F17B6800B9EBB5 /* HorizontalBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0727F17B6800B9EBB5 /* HorizontalBarChartViewController.swift */; };
+		B640BD2727F17B6800B9EBB5 /* PiePolylineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0827F17B6800B9EBB5 /* PiePolylineChartViewController.swift */; };
+		B640BD2827F17B6800B9EBB5 /* CombinedChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0927F17B6800B9EBB5 /* CombinedChartViewController.swift */; };
+		B640BD2927F17B6800B9EBB5 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0A27F17B6800B9EBB5 /* BarChartViewController.swift */; };
+		B640BD2A27F17B6800B9EBB5 /* SinusBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0B27F17B6800B9EBB5 /* SinusBarChartViewController.swift */; };
+		B640BD2B27F17B6800B9EBB5 /* CandleStickChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD0C27F17B6800B9EBB5 /* CandleStickChartViewController.swift */; };
+		B640BD4827F17B8200B9EBB5 /* RadarMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD2D27F17B8200B9EBB5 /* RadarMarkerView.xib */; };
+		B640BD4927F17B8200B9EBB5 /* DemoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD2E27F17B8200B9EBB5 /* DemoListViewController.xib */; };
+		B640BD4A27F17B8200B9EBB5 /* SinusBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3027F17B8200B9EBB5 /* SinusBarChartViewController.xib */; };
+		B640BD4B27F17B8200B9EBB5 /* BarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3127F17B8200B9EBB5 /* BarChartViewController.xib */; };
+		B640BD4C27F17B8200B9EBB5 /* ColoredLineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3227F17B8200B9EBB5 /* ColoredLineChartViewController.xib */; };
+		B640BD4D27F17B8200B9EBB5 /* LineChart2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3327F17B8200B9EBB5 /* LineChart2ViewController.xib */; };
+		B640BD4E27F17B8200B9EBB5 /* PiePolylineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3427F17B8200B9EBB5 /* PiePolylineChartViewController.xib */; };
+		B640BD4F27F17B8200B9EBB5 /* PieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3527F17B8200B9EBB5 /* PieChartViewController.xib */; };
+		B640BD5027F17B8200B9EBB5 /* LineChart1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3627F17B8200B9EBB5 /* LineChart1ViewController.xib */; };
+		B640BD5127F17B8200B9EBB5 /* MultipleLinesChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3727F17B8200B9EBB5 /* MultipleLinesChartViewController.xib */; };
+		B640BD5227F17B8200B9EBB5 /* NegativeStackedBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3827F17B8200B9EBB5 /* NegativeStackedBarChartViewController.xib */; };
+		B640BD5327F17B8200B9EBB5 /* MultipleBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3927F17B8200B9EBB5 /* MultipleBarChartViewController.xib */; };
+		B640BD5427F17B8200B9EBB5 /* CombinedChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3A27F17B8200B9EBB5 /* CombinedChartViewController.xib */; };
+		B640BD5527F17B8200B9EBB5 /* StackedBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3B27F17B8200B9EBB5 /* StackedBarChartViewController.xib */; };
+		B640BD5627F17B8200B9EBB5 /* HalfPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3C27F17B8200B9EBB5 /* HalfPieChartViewController.xib */; };
+		B640BD5727F17B8200B9EBB5 /* HorizontalBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3D27F17B8200B9EBB5 /* HorizontalBarChartViewController.xib */; };
+		B640BD5827F17B8200B9EBB5 /* CandleStickChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3E27F17B8200B9EBB5 /* CandleStickChartViewController.xib */; };
+		B640BD5927F17B8200B9EBB5 /* ScatterChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD3F27F17B8200B9EBB5 /* ScatterChartViewController.xib */; };
+		B640BD5A27F17B8200B9EBB5 /* PositiveNegativeBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD4027F17B8200B9EBB5 /* PositiveNegativeBarChartViewController.xib */; };
+		B640BD5B27F17B8200B9EBB5 /* CubicLineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD4127F17B8200B9EBB5 /* CubicLineChartViewController.xib */; };
+		B640BD5C27F17B8200B9EBB5 /* LineChartFilledViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD4227F17B8200B9EBB5 /* LineChartFilledViewController.xib */; };
+		B640BD5D27F17B8200B9EBB5 /* RadarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD4327F17B8200B9EBB5 /* RadarChartViewController.xib */; };
+		B640BD5E27F17B8200B9EBB5 /* RealmDemosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD4427F17B8200B9EBB5 /* RealmDemosViewController.xib */; };
+		B640BD5F27F17B8200B9EBB5 /* AnotherBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD4527F17B8200B9EBB5 /* AnotherBarChartViewController.xib */; };
+		B640BD6027F17B8200B9EBB5 /* BubbleChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD4627F17B8200B9EBB5 /* BubbleChartViewController.xib */; };
+		B640BD6127F17B8200B9EBB5 /* LineChartTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B640BD4727F17B8200B9EBB5 /* LineChartTimeViewController.xib */; };
+		B640BD6327F17D1000B9EBB5 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B640BD6227F17D1000B9EBB5 /* BalloonMarker.swift */; };
 		B67483DB27B60372005FE1EE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67483DA27B60372005FE1EE /* Device.swift */; };
 		B68032471F25E9A8009D0F50 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68032461F25E9A8009D0F50 /* Const.swift */; };
 		B68032CD1F25F68D009D0F50 /* demo-big.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68032CC1F25F68D009D0F50 /* demo-big.gif */; };
@@ -41,6 +99,8 @@
 		B690BA601F31676D0011FD8B /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B690BA5F1F31676D0011FD8B /* image0.jpg */; };
 		B69716931F663EF70008D71F /* SnapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69716921F663EF70008D71F /* SnapController.swift */; };
 		B69716951F665AEF0008D71F /* HandyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69716941F665AEF0008D71F /* HandyModel.swift */; };
+		B69A034A27F6909C00043BD7 /* CVCalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A034927F6909C00043BD7 /* CVCalendarController.swift */; };
+		B69A034C27F6927100043BD7 /* Color+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A034B27F6927100043BD7 /* Color+HexString.swift */; };
 		B69F132F22FA81EF003338C4 /* CodableProtcol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F132E22FA81EE003338C4 /* CodableProtcol.swift */; };
 		B6B1EE6E1F0B31B900D2658F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6C1F0B31B900D2658F /* Main.storyboard */; };
 		B6B1EE701F0B31B900D2658F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1EE6F1F0B31B900D2658F /* Assets.xcassets */; };
@@ -143,6 +203,64 @@
 		B62C19B11F171547000E9E60 /* LonginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LonginController.swift; sourceTree = "<group>"; };
 		B62C19B31F171570000E9E60 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B62C19B51F1715ED000E9E60 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		B640BCEC27F17B6700B9EBB5 /* XYMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYMarkerView.swift; sourceTree = "<group>"; };
+		B640BCED27F17B6700B9EBB5 /* RadarMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarMarkerView.swift; sourceTree = "<group>"; };
+		B640BCEE27F17B6700B9EBB5 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
+		B640BCEF27F17B6700B9EBB5 /* DemoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoListViewController.swift; sourceTree = "<group>"; };
+		B640BCF127F17B6700B9EBB5 /* IntAxisValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntAxisValueFormatter.swift; sourceTree = "<group>"; };
+		B640BCF227F17B6700B9EBB5 /* DayAxisValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayAxisValueFormatter.swift; sourceTree = "<group>"; };
+		B640BCF327F17B6700B9EBB5 /* DateValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateValueFormatter.swift; sourceTree = "<group>"; };
+		B640BCF427F17B6700B9EBB5 /* LargeValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeValueFormatter.swift; sourceTree = "<group>"; };
+		B640BCF627F17B6800B9EBB5 /* MultipleLinesChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleLinesChartViewController.swift; sourceTree = "<group>"; };
+		B640BCF727F17B6800B9EBB5 /* MultipleBarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleBarChartViewController.swift; sourceTree = "<group>"; };
+		B640BCF827F17B6800B9EBB5 /* HalfPieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfPieChartViewController.swift; sourceTree = "<group>"; };
+		B640BCF927F17B6800B9EBB5 /* LineChartTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartTimeViewController.swift; sourceTree = "<group>"; };
+		B640BCFA27F17B6800B9EBB5 /* ColoredLineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredLineChartViewController.swift; sourceTree = "<group>"; };
+		B640BCFB27F17B6800B9EBB5 /* LineChart2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart2ViewController.swift; sourceTree = "<group>"; };
+		B640BCFC27F17B6800B9EBB5 /* LineChart1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart1ViewController.swift; sourceTree = "<group>"; };
+		B640BCFD27F17B6800B9EBB5 /* NegativeStackedBarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NegativeStackedBarChartViewController.swift; sourceTree = "<group>"; };
+		B640BCFE27F17B6800B9EBB5 /* ScatterChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScatterChartViewController.swift; sourceTree = "<group>"; };
+		B640BCFF27F17B6800B9EBB5 /* StackedBarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackedBarChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0027F17B6800B9EBB5 /* BubbleChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0127F17B6800B9EBB5 /* LineChartFilledViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartFilledViewController.swift; sourceTree = "<group>"; };
+		B640BD0227F17B6800B9EBB5 /* PositiveNegativeBarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositiveNegativeBarChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0327F17B6800B9EBB5 /* AnotherBarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherBarChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0427F17B6800B9EBB5 /* PieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0527F17B6800B9EBB5 /* CubicLineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicLineChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0627F17B6800B9EBB5 /* RadarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0727F17B6800B9EBB5 /* HorizontalBarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalBarChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0827F17B6800B9EBB5 /* PiePolylineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiePolylineChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0927F17B6800B9EBB5 /* CombinedChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0A27F17B6800B9EBB5 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0B27F17B6800B9EBB5 /* SinusBarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinusBarChartViewController.swift; sourceTree = "<group>"; };
+		B640BD0C27F17B6800B9EBB5 /* CandleStickChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandleStickChartViewController.swift; sourceTree = "<group>"; };
+		B640BD2D27F17B8200B9EBB5 /* RadarMarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadarMarkerView.xib; sourceTree = "<group>"; };
+		B640BD2E27F17B8200B9EBB5 /* DemoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoListViewController.xib; sourceTree = "<group>"; };
+		B640BD3027F17B8200B9EBB5 /* SinusBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SinusBarChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3127F17B8200B9EBB5 /* BarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3227F17B8200B9EBB5 /* ColoredLineChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColoredLineChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3327F17B8200B9EBB5 /* LineChart2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChart2ViewController.xib; sourceTree = "<group>"; };
+		B640BD3427F17B8200B9EBB5 /* PiePolylineChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PiePolylineChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3527F17B8200B9EBB5 /* PieChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PieChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3627F17B8200B9EBB5 /* LineChart1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChart1ViewController.xib; sourceTree = "<group>"; };
+		B640BD3727F17B8200B9EBB5 /* MultipleLinesChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleLinesChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3827F17B8200B9EBB5 /* NegativeStackedBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NegativeStackedBarChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3927F17B8200B9EBB5 /* MultipleBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleBarChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3A27F17B8200B9EBB5 /* CombinedChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CombinedChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3B27F17B8200B9EBB5 /* StackedBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackedBarChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3C27F17B8200B9EBB5 /* HalfPieChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HalfPieChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3D27F17B8200B9EBB5 /* HorizontalBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalBarChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3E27F17B8200B9EBB5 /* CandleStickChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandleStickChartViewController.xib; sourceTree = "<group>"; };
+		B640BD3F27F17B8200B9EBB5 /* ScatterChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScatterChartViewController.xib; sourceTree = "<group>"; };
+		B640BD4027F17B8200B9EBB5 /* PositiveNegativeBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PositiveNegativeBarChartViewController.xib; sourceTree = "<group>"; };
+		B640BD4127F17B8200B9EBB5 /* CubicLineChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CubicLineChartViewController.xib; sourceTree = "<group>"; };
+		B640BD4227F17B8200B9EBB5 /* LineChartFilledViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartFilledViewController.xib; sourceTree = "<group>"; };
+		B640BD4327F17B8200B9EBB5 /* RadarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadarChartViewController.xib; sourceTree = "<group>"; };
+		B640BD4427F17B8200B9EBB5 /* RealmDemosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RealmDemosViewController.xib; sourceTree = "<group>"; };
+		B640BD4527F17B8200B9EBB5 /* AnotherBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnotherBarChartViewController.xib; sourceTree = "<group>"; };
+		B640BD4627F17B8200B9EBB5 /* BubbleChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BubbleChartViewController.xib; sourceTree = "<group>"; };
+		B640BD4727F17B8200B9EBB5 /* LineChartTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartTimeViewController.xib; sourceTree = "<group>"; };
+		B640BD6227F17D1000B9EBB5 /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
 		B642A4F31F0E35DB005F1712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B642A4F51F0E35DE005F1712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B642A4F81F0E35E6005F1712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -163,6 +281,8 @@
 		B690BA5F1F31676D0011FD8B /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
 		B69716921F663EF70008D71F /* SnapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapController.swift; sourceTree = "<group>"; };
 		B69716941F665AEF0008D71F /* HandyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandyModel.swift; sourceTree = "<group>"; };
+		B69A034927F6909C00043BD7 /* CVCalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCalendarController.swift; sourceTree = "<group>"; };
+		B69A034B27F6927100043BD7 /* Color+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+HexString.swift"; sourceTree = "<group>"; };
 		B69F132E22FA81EE003338C4 /* CodableProtcol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableProtcol.swift; sourceTree = "<group>"; };
 		B6B1EE651F0B31B900D2658F /* SwiftPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B1EE6D1F0B31B900D2658F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -340,6 +460,111 @@
 			path = Reflect;
 			sourceTree = "<group>";
 		};
+		B640BCEA27F17B4800B9EBB5 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				B640BD2C27F17B8200B9EBB5 /* XIBs */,
+				B640BCEB27F17B6700B9EBB5 /* Components */,
+				B640BCEE27F17B6700B9EBB5 /* DemoBaseViewController.swift */,
+				B640BCEF27F17B6700B9EBB5 /* DemoListViewController.swift */,
+				B640BCF527F17B6800B9EBB5 /* Demos */,
+				B640BCF027F17B6700B9EBB5 /* Formatters */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		B640BCEB27F17B6700B9EBB5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B640BD6227F17D1000B9EBB5 /* BalloonMarker.swift */,
+				B640BCEC27F17B6700B9EBB5 /* XYMarkerView.swift */,
+				B640BCED27F17B6700B9EBB5 /* RadarMarkerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B640BCF027F17B6700B9EBB5 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				B640BCF127F17B6700B9EBB5 /* IntAxisValueFormatter.swift */,
+				B640BCF227F17B6700B9EBB5 /* DayAxisValueFormatter.swift */,
+				B640BCF327F17B6700B9EBB5 /* DateValueFormatter.swift */,
+				B640BCF427F17B6700B9EBB5 /* LargeValueFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		B640BCF527F17B6800B9EBB5 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				B640BCF627F17B6800B9EBB5 /* MultipleLinesChartViewController.swift */,
+				B640BCF727F17B6800B9EBB5 /* MultipleBarChartViewController.swift */,
+				B640BCF827F17B6800B9EBB5 /* HalfPieChartViewController.swift */,
+				B640BCF927F17B6800B9EBB5 /* LineChartTimeViewController.swift */,
+				B640BCFA27F17B6800B9EBB5 /* ColoredLineChartViewController.swift */,
+				B640BCFB27F17B6800B9EBB5 /* LineChart2ViewController.swift */,
+				B640BCFC27F17B6800B9EBB5 /* LineChart1ViewController.swift */,
+				B640BCFD27F17B6800B9EBB5 /* NegativeStackedBarChartViewController.swift */,
+				B640BCFE27F17B6800B9EBB5 /* ScatterChartViewController.swift */,
+				B640BCFF27F17B6800B9EBB5 /* StackedBarChartViewController.swift */,
+				B640BD0027F17B6800B9EBB5 /* BubbleChartViewController.swift */,
+				B640BD0127F17B6800B9EBB5 /* LineChartFilledViewController.swift */,
+				B640BD0227F17B6800B9EBB5 /* PositiveNegativeBarChartViewController.swift */,
+				B640BD0327F17B6800B9EBB5 /* AnotherBarChartViewController.swift */,
+				B640BD0427F17B6800B9EBB5 /* PieChartViewController.swift */,
+				B640BD0527F17B6800B9EBB5 /* CubicLineChartViewController.swift */,
+				B640BD0627F17B6800B9EBB5 /* RadarChartViewController.swift */,
+				B640BD0727F17B6800B9EBB5 /* HorizontalBarChartViewController.swift */,
+				B640BD0827F17B6800B9EBB5 /* PiePolylineChartViewController.swift */,
+				B640BD0927F17B6800B9EBB5 /* CombinedChartViewController.swift */,
+				B640BD0A27F17B6800B9EBB5 /* BarChartViewController.swift */,
+				B640BD0B27F17B6800B9EBB5 /* SinusBarChartViewController.swift */,
+				B640BD0C27F17B6800B9EBB5 /* CandleStickChartViewController.swift */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		B640BD2C27F17B8200B9EBB5 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				B640BD2D27F17B8200B9EBB5 /* RadarMarkerView.xib */,
+				B640BD2E27F17B8200B9EBB5 /* DemoListViewController.xib */,
+				B640BD2F27F17B8200B9EBB5 /* Demos */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		B640BD2F27F17B8200B9EBB5 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				B640BD3027F17B8200B9EBB5 /* SinusBarChartViewController.xib */,
+				B640BD3127F17B8200B9EBB5 /* BarChartViewController.xib */,
+				B640BD3227F17B8200B9EBB5 /* ColoredLineChartViewController.xib */,
+				B640BD3327F17B8200B9EBB5 /* LineChart2ViewController.xib */,
+				B640BD3427F17B8200B9EBB5 /* PiePolylineChartViewController.xib */,
+				B640BD3527F17B8200B9EBB5 /* PieChartViewController.xib */,
+				B640BD3627F17B8200B9EBB5 /* LineChart1ViewController.xib */,
+				B640BD3727F17B8200B9EBB5 /* MultipleLinesChartViewController.xib */,
+				B640BD3827F17B8200B9EBB5 /* NegativeStackedBarChartViewController.xib */,
+				B640BD3927F17B8200B9EBB5 /* MultipleBarChartViewController.xib */,
+				B640BD3A27F17B8200B9EBB5 /* CombinedChartViewController.xib */,
+				B640BD3B27F17B8200B9EBB5 /* StackedBarChartViewController.xib */,
+				B640BD3C27F17B8200B9EBB5 /* HalfPieChartViewController.xib */,
+				B640BD3D27F17B8200B9EBB5 /* HorizontalBarChartViewController.xib */,
+				B640BD3E27F17B8200B9EBB5 /* CandleStickChartViewController.xib */,
+				B640BD3F27F17B8200B9EBB5 /* ScatterChartViewController.xib */,
+				B640BD4027F17B8200B9EBB5 /* PositiveNegativeBarChartViewController.xib */,
+				B640BD4127F17B8200B9EBB5 /* CubicLineChartViewController.xib */,
+				B640BD4227F17B8200B9EBB5 /* LineChartFilledViewController.xib */,
+				B640BD4327F17B8200B9EBB5 /* RadarChartViewController.xib */,
+				B640BD4427F17B8200B9EBB5 /* RealmDemosViewController.xib */,
+				B640BD4527F17B8200B9EBB5 /* AnotherBarChartViewController.xib */,
+				B640BD4627F17B8200B9EBB5 /* BubbleChartViewController.xib */,
+				B640BD4727F17B8200B9EBB5 /* LineChartTimeViewController.xib */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
 		B6B1EE5C1F0B31B900D2658F = {
 			isa = PBXGroup;
 			children = (
@@ -412,6 +637,7 @@
 			children = (
 				B606392B1F14CD22003A3C78 /* Reflect */,
 				B621E5E61F0CE9DD00209CD6 /* ZJExtensionSwift.swift */,
+				B69A034B27F6927100043BD7 /* Color+HexString.swift */,
 				B68032461F25E9A8009D0F50 /* Const.swift */,
 				B68032D01F26E20B009D0F50 /* Common.swift */,
 				B67483DA27B60372005FE1EE /* Device.swift */,
@@ -439,6 +665,7 @@
 		B6B1EEA01F0B658800D2658F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B640BCEA27F17B4800B9EBB5 /* Charts */,
 				B6B1EEA11F0B658800D2658F /* BaseClass */,
 				B6B1EEB71F0B66D300D2658F /* Longin */,
 				B6B1EEB01F0B66CB00D2658F /* Home */,
@@ -645,6 +872,7 @@
 				B68032DA1F2714B7009D0F50 /* RealmSwiftVC.swift */,
 				B68032DC1F2714D0009D0F50 /* RxSwiftVC.swift */,
 				B68032DE1F2714E6009D0F50 /* ChartsController.swift */,
+				B69A034927F6909C00043BD7 /* CVCalendarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -945,16 +1173,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B1EF0B1F0B95D800D2658F /* ShopCart.storyboard in Resources */,
+				B640BD4F27F17B8200B9EBB5 /* PieChartViewController.xib in Resources */,
+				B640BD6127F17B8200B9EBB5 /* LineChartTimeViewController.xib in Resources */,
+				B640BD5227F17B8200B9EBB5 /* NegativeStackedBarChartViewController.xib in Resources */,
+				B640BD5927F17B8200B9EBB5 /* ScatterChartViewController.xib in Resources */,
+				B640BD5527F17B8200B9EBB5 /* StackedBarChartViewController.xib in Resources */,
 				B68032CF1F25F69B009D0F50 /* demo-small.gif in Resources */,
+				B640BD5027F17B8200B9EBB5 /* LineChart1ViewController.xib in Resources */,
+				B640BD5127F17B8200B9EBB5 /* MultipleLinesChartViewController.xib in Resources */,
 				B68032CD1F25F68D009D0F50 /* demo-big.gif in Resources */,
+				B640BD5E27F17B8200B9EBB5 /* RealmDemosViewController.xib in Resources */,
+				B640BD5A27F17B8200B9EBB5 /* PositiveNegativeBarChartViewController.xib in Resources */,
 				B6B1EE731F0B31B900D2658F /* LaunchScreen.storyboard in Resources */,
+				B640BD4C27F17B8200B9EBB5 /* ColoredLineChartViewController.xib in Resources */,
 				B6B1EF091F0B95C300D2658F /* Find.storyboard in Resources */,
+				B640BD5B27F17B8200B9EBB5 /* CubicLineChartViewController.xib in Resources */,
+				B640BD5427F17B8200B9EBB5 /* CombinedChartViewController.xib in Resources */,
+				B640BD4E27F17B8200B9EBB5 /* PiePolylineChartViewController.xib in Resources */,
+				B640BD5727F17B8200B9EBB5 /* HorizontalBarChartViewController.xib in Resources */,
+				B640BD5C27F17B8200B9EBB5 /* LineChartFilledViewController.xib in Resources */,
+				B640BD4D27F17B8200B9EBB5 /* LineChart2ViewController.xib in Resources */,
+				B640BD5327F17B8200B9EBB5 /* MultipleBarChartViewController.xib in Resources */,
 				B6B1EE701F0B31B900D2658F /* Assets.xcassets in Resources */,
+				B640BD4A27F17B8200B9EBB5 /* SinusBarChartViewController.xib in Resources */,
 				B6B1EE6E1F0B31B900D2658F /* Main.storyboard in Resources */,
 				B6B1EF071F0B8D4900D2658F /* Category.storyboard in Resources */,
+				B640BD5627F17B8200B9EBB5 /* HalfPieChartViewController.xib in Resources */,
 				B6B1EF0D1F0B95EA00D2658F /* My.storyboard in Resources */,
+				B640BD6027F17B8200B9EBB5 /* BubbleChartViewController.xib in Resources */,
+				B640BD4927F17B8200B9EBB5 /* DemoListViewController.xib in Resources */,
+				B640BD5D27F17B8200B9EBB5 /* RadarChartViewController.xib in Resources */,
 				B6B1EF0F1F0B97F200D2658F /* Home.storyboard in Resources */,
+				B640BD4B27F17B8200B9EBB5 /* BarChartViewController.xib in Resources */,
+				B640BD5827F17B8200B9EBB5 /* CandleStickChartViewController.xib in Resources */,
 				B690BA601F31676D0011FD8B /* image0.jpg in Resources */,
+				B640BD4827F17B8200B9EBB5 /* RadarMarkerView.xib in Resources */,
+				B640BD5F27F17B8200B9EBB5 /* AnotherBarChartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,6 +1375,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftPods/Pods-SwiftPods-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CVCalendar/CVCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
@@ -1132,12 +1387,15 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftAlgorithms/Algorithms.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftPullToRefresh/SwiftPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
@@ -1149,8 +1407,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Algorithms.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1182,12 +1442,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69A034A27F6909C00043BD7 /* CVCalendarController.swift in Sources */,
 				B6B1EF051F0B842F00D2658F /* ShopCartController.swift in Sources */,
 				B690BA561F302E5D0011FD8B /* SKPhotoBrowserModel.swift in Sources */,
 				B68032D31F26E6D0009D0F50 /* SwiftyJSONController.swift in Sources */,
 				B606393A1F14CD22003A3C78 /* Reflect+Convert.swift in Sources */,
 				B69716951F665AEF0008D71F /* HandyModel.swift in Sources */,
 				B68032DD1F2714D0009D0F50 /* RxSwiftVC.swift in Sources */,
+				B640BD1227F17B6800B9EBB5 /* DayAxisValueFormatter.swift in Sources */,
 				B68032D11F26E20B009D0F50 /* Common.swift in Sources */,
 				B68032D91F27149D009D0F50 /* SKPhotoBrowserVC.swift in Sources */,
 				B68032D51F271408009D0F50 /* AlamofireController.swift in Sources */,
@@ -1197,29 +1459,61 @@
 				B606393D1F14CD22003A3C78 /* Reflect+Property.swift in Sources */,
 				B67483DB27B60372005FE1EE /* Device.swift in Sources */,
 				B62C19B61F1715ED000E9E60 /* UserManager.swift in Sources */,
+				B640BD2827F17B6800B9EBB5 /* CombinedChartViewController.swift in Sources */,
+				B640BD1A27F17B6800B9EBB5 /* LineChart2ViewController.swift in Sources */,
+				B640BD0E27F17B6800B9EBB5 /* RadarMarkerView.swift in Sources */,
 				B60639391F14CD22003A3C78 /* Reflect+Parse.swift in Sources */,
+				B640BD1827F17B6800B9EBB5 /* LineChartTimeViewController.swift in Sources */,
+				B640BD2727F17B6800B9EBB5 /* PiePolylineChartViewController.swift in Sources */,
+				B640BD1127F17B6800B9EBB5 /* IntAxisValueFormatter.swift in Sources */,
+				B640BD2227F17B6800B9EBB5 /* AnotherBarChartViewController.swift in Sources */,
 				B6B1EE9F1F0B656700D2658F /* ZJNavigationController.swift in Sources */,
+				B640BD1427F17B6800B9EBB5 /* LargeValueFormatter.swift in Sources */,
 				B606393B1F14CD22003A3C78 /* Reflect+Class.swift in Sources */,
+				B640BD2B27F17B6800B9EBB5 /* CandleStickChartViewController.swift in Sources */,
 				B6B1EEA61F0B65A500D2658F /* BaseViewController.swift in Sources */,
+				B69A034C27F6927100043BD7 /* Color+HexString.swift in Sources */,
 				B621E5E31F0CD3B700209CD6 /* CategoryViewModel.swift in Sources */,
 				B606393E1F14CD22003A3C78 /* Reflect+Type.swift in Sources */,
 				B6B1EE9A1F0B64DD00D2658F /* AppDelegate.swift in Sources */,
 				B6B1EF011F0B840900D2658F /* CategoryController.swift in Sources */,
+				B640BD2427F17B6800B9EBB5 /* CubicLineChartViewController.swift in Sources */,
 				B62C19B21F171547000E9E60 /* LonginController.swift in Sources */,
 				B6B1EF031F0B841D00D2658F /* FindController.swift in Sources */,
 				B6B1EEEF1F0B790E00D2658F /* MyController.swift in Sources */,
 				B606393C1F14CD22003A3C78 /* Reflect+Other.swift in Sources */,
 				B69F132F22FA81EF003338C4 /* CodableProtcol.swift in Sources */,
+				B640BD0F27F17B6800B9EBB5 /* DemoBaseViewController.swift in Sources */,
+				B640BD1627F17B6800B9EBB5 /* MultipleBarChartViewController.swift in Sources */,
+				B640BD2527F17B6800B9EBB5 /* RadarChartViewController.swift in Sources */,
+				B640BD1927F17B6800B9EBB5 /* ColoredLineChartViewController.swift in Sources */,
+				B640BD2027F17B6800B9EBB5 /* LineChartFilledViewController.swift in Sources */,
+				B640BD1527F17B6800B9EBB5 /* MultipleLinesChartViewController.swift in Sources */,
 				B690BA541F2B489C0011FD8B /* SKCollectionCell.swift in Sources */,
+				B640BD2327F17B6800B9EBB5 /* PieChartViewController.swift in Sources */,
+				B640BD0D27F17B6800B9EBB5 /* XYMarkerView.swift in Sources */,
 				B68032471F25E9A8009D0F50 /* Const.swift in Sources */,
+				B640BD2927F17B6800B9EBB5 /* BarChartViewController.swift in Sources */,
+				B640BD1D27F17B6800B9EBB5 /* ScatterChartViewController.swift in Sources */,
 				B68032DB1F2714B7009D0F50 /* RealmSwiftVC.swift in Sources */,
+				B640BD1E27F17B6800B9EBB5 /* StackedBarChartViewController.swift in Sources */,
+				B640BD2A27F17B6800B9EBB5 /* SinusBarChartViewController.swift in Sources */,
+				B640BD2627F17B6800B9EBB5 /* HorizontalBarChartViewController.swift in Sources */,
 				B68032DF1F2714E6009D0F50 /* ChartsController.swift in Sources */,
+				B640BD1027F17B6800B9EBB5 /* DemoListViewController.swift in Sources */,
+				B640BD1727F17B6800B9EBB5 /* HalfPieChartViewController.swift in Sources */,
 				B6B1EE9D1F0B653700D2658F /* ZJTabBarController.swift in Sources */,
 				B69716931F663EF70008D71F /* SnapController.swift in Sources */,
+				B640BD2127F17B6800B9EBB5 /* PositiveNegativeBarChartViewController.swift in Sources */,
 				B606393F1F14CD22003A3C78 /* Reflect.swift in Sources */,
+				B640BD1327F17B6800B9EBB5 /* DateValueFormatter.swift in Sources */,
+				B640BD1B27F17B6800B9EBB5 /* LineChart1ViewController.swift in Sources */,
 				B6B1EEB61F0B66CB00D2658F /* HomeController.swift in Sources */,
 				B621E5E11F0CCDCE00209CD6 /* CategoryCell.swift in Sources */,
+				B640BD1C27F17B6800B9EBB5 /* NegativeStackedBarChartViewController.swift in Sources */,
+				B640BD1F27F17B6800B9EBB5 /* BubbleChartViewController.swift in Sources */,
 				B62C19B41F171570000E9E60 /* User.swift in Sources */,
+				B640BD6327F17D1000B9EBB5 /* BalloonMarker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

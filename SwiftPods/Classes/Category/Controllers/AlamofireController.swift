@@ -98,7 +98,7 @@ class AlamofireController: UIViewController {
         
         AF.request(url, method: HTTPMethod.post, parameters: param).responseJSON { (response) in
             
-            if let json: Any = response.result as Any {
+            if case let .success(json) = response.result {
                 print("JSON: \(json)")
             }
             guard (response.value != nil) == true else {

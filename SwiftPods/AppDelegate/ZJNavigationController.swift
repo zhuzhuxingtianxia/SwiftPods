@@ -12,7 +12,23 @@ class ZJNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         navigationBar.isTranslucent = false
+        if #available(iOS 15.0, *) {
+            let appperance = UINavigationBarAppearance()
+               //添加背景色
+            appperance.backgroundColor = .white
+            appperance.shadowImage = UIImage()
+            appperance.shadowColor = nil
+
+           //设置字体颜色
+            appperance.titleTextAttributes = [.foregroundColor: UIColor.black as Any]
+
+            navigationBar.standardAppearance = appperance;
+            navigationBar.scrollEdgeAppearance = appperance;
+
+        }
+    
         // Do any additional setup after loading the view.
     }
 

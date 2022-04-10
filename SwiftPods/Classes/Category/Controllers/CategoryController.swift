@@ -35,7 +35,13 @@ class CategoryController: BaseViewController {
     
     fileprivate func buildTableView(){
         
-        tableView = UITableView.init(frame: view.frame, style: .plain)
+        tableView = UITableView.init(frame: view.bounds, style: .plain)
+        if #available(iOS 13.0, *) {
+            tableView.automaticallyAdjustsScrollIndicatorInsets = false
+        } else {
+            // Fallback on earlier versions
+        }
+        tableView.contentInsetAdjustmentBehavior = .never
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView.init()
@@ -116,7 +122,10 @@ extension CategoryController:UITableViewDelegate,UITableViewDataSource {
                 let chartsC = ChartsController.init()
                 chartsC.title = model.title;
                 navigationController?.pushViewController(chartsC, animated: true)
-            
+            case 7:
+                let cvCalendar = CVCalendarController()
+                cvCalendar.title = model.title;
+                navigationController?.pushViewController(cvCalendar, animated: true)
         default: break
             
         }

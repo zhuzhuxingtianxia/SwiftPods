@@ -15,6 +15,12 @@ class ChartsController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
         title = "图表库"
+        
+        let demo = DemoListViewController()
+        demo.view.frame = view.bounds
+        addChild(demo)
+        view.addSubview(demo.view)
+        
     }
 
     override func didReceiveMemoryWarning() {

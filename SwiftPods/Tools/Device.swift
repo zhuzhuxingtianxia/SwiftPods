@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class Device {
-    /**
+        /**
             获取当前系统版本
          */
         class var systemVersion: String {

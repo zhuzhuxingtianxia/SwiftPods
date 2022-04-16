@@ -19,13 +19,17 @@ target 'SwiftPods' do
 
   #类似SDWebImage 还有AlamofireImage
   pod 'Kingfisher', '~> 4.0'
-  
+  # 类似Kingfisher 图片管理类库
+ # pod 'Nuke', :git => 'https://github.com/kean/Nuke', :branch => 'master'
+ 
   #数据库
 #  pod 'RealmSwift', '~> 3.13.1'
 
-  #图片预览 依赖SDWebImage
-  pod 'SKPhotoBrowser', '~> 6.1.0'
- # pod 'SDWebImage', '~>3.8'
+  #图片预览
+  pod 'SKPhotoBrowser', '~> 6.1.0'8'
+  # 相册图片选择库
+ # pod "BSImagePicker", "~> 3.1"
+ # pod 'CLImagePickerTool', :git => 'https://github.com/Darren-chenchen/CLImagePickerTool.git'
   
   #banner滚动图片
 #  pod 'FSPagerView','~> 0.8.2'

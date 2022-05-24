@@ -46,6 +46,12 @@ target 'SwiftPods' do
   # 可动画的TabBarController
 # pod 'RAMAnimatedTabBarController'
 
+#  pod 'JXSegmentedView', '~> 1.2.7'# 分页控制
+#  pod 'EasyListView', '~> 1.2.2'# 快速搭建静态列表
+#  pod 'ActiveLabel', '~> 1.1.0'# Label部分内容点击
+#  pod 'BonMot', '~> 5.6.0'# attributedString的简化
+#  pod 'RZColorfulSwift' # 富文本框架，支持展开收起
+
   #下拉刷新
   pod 'SwiftPullToRefresh', '~> 3.0.0'
   pod 'ESPullToRefresh', '~> 2.9.3'

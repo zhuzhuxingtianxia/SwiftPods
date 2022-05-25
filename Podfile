@@ -51,6 +51,11 @@ target 'SwiftPods' do
 #  pod 'ActiveLabel', '~> 1.1.0'# Label部分内容点击
 #  pod 'BonMot', '~> 5.6.0'# attributedString的简化
 #  pod 'RZColorfulSwift' # 富文本框架，支持展开收起
+  # Socket通信
+#  pod 'SwiftSocket'
+  # 编码数据结构，比较难用
+#  pod 'ProtocolBuffers-Swift'
+
 
   #下拉刷新
   pod 'SwiftPullToRefresh', '~> 3.0.0'

@@ -44,12 +44,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Alamofire
     - Charts
     - CVCalendar
-    - SwiftAlgorithms
-    - Toast-Swift
-  trunk:
-    - Alamofire
     - ESPullToRefresh
     - HandyJSON
     - Kingfisher
@@ -60,8 +57,10 @@ SPEC REPOS:
     - RxSwift
     - SKPhotoBrowser
     - SnapKit
+    - SwiftAlgorithms
     - SwiftPullToRefresh
     - SwiftyJSON
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
@@ -82,6 +81,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: a49fa5fa2191c4a331d1e4fa4dba9031309a1e3c
+PODFILE CHECKSUM: 9830f56058993dded3237607c5e6567b97a2884f
 
-COCOAPODS: 1.11.0
+COCOAPODS: 1.11.3

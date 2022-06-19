@@ -43,6 +43,9 @@ class CVCalendarController: UIViewController {
     }
    
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
     /*
     // MARK: - Navigation
 

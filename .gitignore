@@ -1,0 +1,14 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Xcode
+#
+# gitignore contributors: remember to update Xcode.gitignore
+
+## User settings
+
+xcuserdata/
+*.xcuserstate
+*.DS_Store
+
+## App packaging
+
+*.ipa

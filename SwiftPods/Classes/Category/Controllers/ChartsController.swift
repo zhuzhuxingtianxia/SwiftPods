@@ -5,6 +5,7 @@
 //  Created by Jion on 2017/7/25.
 //  Copyright © 2017年 天天. All rights reserved.
 //  事例地址：https://www.hangge.com/blog/cache/detail_2118.html
+//  非连续曲线处理：https://www.it72.com/12369.htm
 
 import UIKit
 
